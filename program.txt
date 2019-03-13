@@ -1,0 +1,5 @@
+ADD $A, 1, 7
+BNE $A, 8
+NAND $A, $A, $B
+SR $C, $B
+SW $A, $C
