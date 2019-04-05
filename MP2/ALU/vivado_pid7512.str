@@ -1100,3 +1100,115 @@ maximizeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aw (aE, aG)
 // [GUI Memory]: 135 MB (+102kb) [00:47:48]
 // Elapsed time: 272 seconds
 selectCodeEditor("ALU.vhd", 173, 191); // ce (w, ck)
+// Elapsed time: 55 seconds
+selectCodeEditor("ALU.vhd", 45, 313); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("ALU.vhd", 58, 145); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("ALU.vhd", 310, 162); // ce (w, ck)
+// Elapsed time: 74 seconds
+selectCodeEditor("ALU.vhd", 248, 311, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("ALU.vhd", 747, 281); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 322, 355); // ce (w, ck)
+// [GUI Memory]: 145 MB (+2451kb) [00:54:51]
+// Elapsed time: 21 seconds
+selectCodeEditor("ALU.vhd", 311, 272); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, ck)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cM, ck)
+// bx (ck):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// [Engine Memory]: 1,292 MB (+9159kb) [00:55:21]
+// Engine heap size: 1,292 MB. GUI used memory: 68 MB. Current time: 4/5/19 3:04:06 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,292 MB. GUI used memory: 67 MB. Current time: 4/5/19 3:04:06 PM PDT
+dockFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aw (aE, aG)
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1503.531 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:17] 
+// Tcl Message: 	Parameter width bound to: 16 - type: integer  	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:48] INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (1#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:51] INFO: [Synth 8-638] synthesizing module 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftRight' (2#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ALU' (3#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:17] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1503.531 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1503.531 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1503.531 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,292 MB. GUI used memory: 64 MB. Current time: 4/5/19 3:04:08 PM PDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1549.262 ; gain = 45.730 
+dismissDialog("Reloading"); // bx (ck)
+selectCodeEditor("ALU.vhd", 115, 10); // ce (w, ck)
+// Elapsed time: 43 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cM, ck)
+// bx (ck):  Reloading : addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: refresh_design 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: ELABORATE_START
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1549.262 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 1,301 MB. GUI used memory: 67 MB. Current time: 4/5/19 3:05:02 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,301 MB. GUI used memory: 67 MB. Current time: 4/5/19 3:05:02 PM PDT
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:24] 
+// Tcl Message: 	Parameter width bound to: 16 - type: integer  	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:55] INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (1#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58] INFO: [Synth 8-638] synthesizing module 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftRight' (2#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ALU' (3#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:24] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1549.262 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1549.262 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1549.262 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,301 MB. GUI used memory: 64 MB. Current time: 4/5/19 3:05:03 PM PDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1594.336 ; gain = 45.074 
+dismissDialog("Reloading"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
