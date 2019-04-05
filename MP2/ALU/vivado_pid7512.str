@@ -1,0 +1,1102 @@
+/*
+
+Xilinx Vivado v2018.2.1 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2288692 on Thu Jul 26 18:24:02 MDT 2018
+IP Build: 2289599 on Thu Jul 26 21:09:20 MDT 2018
+
+Process ID: 7512
+License: Customer
+
+Current time: 	Fri Apr 05 14:08:53 PDT 2019
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 119 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	mgamlem19
+User home directory: C:/Users/mgamlem19
+User working directory: C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/mgamlem19/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/mgamlem19/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/mgamlem19/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/vivado.log
+Vivado journal file location: 	C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/vivado.jou
+Engine tmp dir: 	C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/.Xil/Vivado-7512-LAB-SCI-214-11
+
+Xilinx Environment Variables
+----------------------------
+VK_SDK_PATH: C:\Dev\1.1.77.0
+VULKAN_SDK: C:\Dev\1.1.77.0
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	169 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 501 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 62 MB (+62917kb) [00:00:07]
+// [Engine Memory]: 478 MB (+349530kb) [00:00:07]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\mgamlem19\Desktop\super-octo-train\MP2\ALU\ALU.xpr. Version: Vivado v2018.2.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'Z:/CS-401-1-CompArch/MP2/ALU' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 531 MB (+31198kb) [00:00:11]
+// [GUI Memory]: 69 MB (+3417kb) [00:00:12]
+// [Engine Memory]: 559 MB (+1187kb) [00:00:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 564 MB. GUI used memory: 37 MB. Current time: 4/5/19 2:08:57 PM PDT
+// Project name: ALU; location: C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 759.645 ; gain = 58.582 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 610 MB (+23711kb) [00:00:16]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 73 MB (+417kb) [00:00:52]
+// [GUI Memory]: 77 MB (+971kb) [00:01:12]
+// [GUI Memory]: 82 MB (+561kb) [00:02:27]
+// [GUI Memory]: 86 MB (+347kb) [00:02:47]
+// Elapsed time: 184 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (ck): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (ck)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: ALU 
+// HMemoryUtils.trashcanNow. Engine heap size: 728 MB. GUI used memory: 41 MB. Current time: 4/5/19 2:12:06 PM PDT
+// [Engine Memory]: 764 MB (+129766kb) [00:03:22]
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 880.949 ; gain = 79.246 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: 	Parameter width bound to: 16 - type: integer  	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:45] INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (1#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:48] INFO: [Synth 8-638] synthesizing module 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftRight' (2#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: ERROR: [Synth 8-690] width mismatch in assignment; target has 16 bits, source has 1 bits [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:51] ERROR: [Synth 8-285] failed synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 937.180 ; gain = 135.477 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 7 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dP' command handler elapsed time: 4 seconds
+// S (ck): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (ck)
+// Elapsed time: 10 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (ck)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ck)
+closeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // aw (aE, ck)
+selectTab((HResource) null, (HResource) null, "Reports", 2); // aE (Q, ck)
+selectTab((HResource) null, (HResource) null, "Design Runs", 3); // aE (Q, ck)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aE (Q, ck)
+selectTab((HResource) null, (HResource) null, "Log", 1); // aE (Q, ck)
+selectTab((HResource) null, (String) null, (HResource) null, "Log", 1, true, false); // aE (Q, ck) - Popup Trigger
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (ck): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (ck)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: ALU 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 937.180 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: 	Parameter width bound to: 16 - type: integer  	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:45] INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (1#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:48] INFO: [Synth 8-638] synthesizing module 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftRight' (2#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: ERROR: [Synth 8-690] width mismatch in assignment; target has 16 bits, source has 1 bits [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:51] ERROR: [Synth 8-285] failed synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 938.152 ; gain = 0.973 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 7 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dP' command handler elapsed time: 4 seconds
+// S (ck): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (ck)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Synth 8-690] width mismatch in assignment; target has 16 bits, source has 1 bits [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:51]", 0); // b (D, S)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Synth 8-690] width mismatch in assignment; target has 16 bits, source has 1 bits [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:51]", 0, false, false, false, false, true); // b (D, S) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // S (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-690] width mismatch in assignment; target has 16 bits, source has 1 bits [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:51]. ]", 2, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-690] width mismatch in assignment; target has 16 bits, source has 1 bits [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:51]. ]", 2, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-690] width mismatch in assignment; target has 16 bits, source has 1 bits [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:51]. ]", 2, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\mgamlem19\Desktop\super-octo-train\MP2\ALU\ALU.srcs\sources_1\new\ALU.vhd;-;;-;16;-;line;-;51;-;;-;16;-;"); // ah (O, ck)
+// Elapsed time: 93 seconds
+selectCodeEditor("ALU.vhd", 169, 78); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("ALU.vhd", 106, 94, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("ALU.vhd", 70, 101); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("ALU.vhd", 193, 93); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 91 MB (+637kb) [00:11:26]
+// Elapsed time: 341 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-690] width mismatch in assignment; target has 16 bits, source has 1 bits [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:51]. ]", 2, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\mgamlem19\Desktop\super-octo-train\MP2\ALU\ALU.srcs\sources_1\new\ALU.vhd;-;;-;16;-;line;-;51;-;;-;16;-;"); // ah (O, ck)
+selectCodeEditor("ALU.vhd", 162, 178); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 160, 232); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 162, 286); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 160, 331); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 163, 385); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 24 seconds
+selectCodeEditor("ALU.vhd", 208, 234); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 227, 232); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 225, 234); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 269, 228); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 209, 180); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("ALU.vhd", 278, 293); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 162, 198); // ce (w, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-690] width mismatch in assignment; target has 16 bits, source has 1 bits [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:51]. ]", 2, false); // ah (O, ck)
+// Elapsed time: 54 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (ck): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (ck)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: ALU 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 938.152 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: 	Parameter width bound to: 16 - type: integer  	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:45] INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (1#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:48] INFO: [Synth 8-638] synthesizing module 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftRight' (2#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: ERROR: [Synth 8-690] width mismatch in assignment; target has 16 bits, source has 1 bits [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:51] ERROR: [Synth 8-285] failed synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 957.512 ; gain = 19.359 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 7 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dP' command handler elapsed time: 4 seconds
+// S (ck): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 786 MB. GUI used memory: 44 MB. Current time: 4/5/19 2:22:51 PM PDT
+// Elapsed time: 14 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a (S)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // S (ck)
+selectCodeEditor("ALU.vhd", 168, 180, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("ALU.vhd", 126, 312); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("ALU.vhd", 37, 159); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 102, 162); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 42, 164, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_SAVE_FILE, "Save File"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("ALU.vhd", 316, 173); // ce (w, ck)
+// Elapsed time: 37 seconds
+selectCodeEditor("ALU.vhd", 76, 229); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("ALU.vhd", 169, 217); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 264, 233); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'v'); // ce (w, ck)
+// [GUI Memory]: 97 MB (+1149kb) [00:16:14]
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (ck): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (ck)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: ALU 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 957.512 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-2810] unit behavioral ignored due to previous errors [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 967.648 ; gain = 10.137 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 1 Infos, 0 Warnings, 0 Critical Warnings and 18 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dP' command handler elapsed time: 3 seconds
+// S (ck): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (ck)
+dismissDialog("Critical Messages"); // S (ck)
+selectCodeEditor("ALU.vhd", 84, 172); // ce (w, ck)
+// Elapsed time: 41 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (ck): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (ck)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: ALU 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 967.648 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-2810] unit behavioral ignored due to previous errors [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 978.004 ; gain = 10.355 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 1 Infos, 0 Warnings, 0 Critical Warnings and 8 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dP' command handler elapsed time: 3 seconds
+// [Engine Memory]: 806 MB (+4159kb) [00:17:30]
+// S (ck): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 806 MB. GUI used memory: 45 MB. Current time: 4/5/19 2:26:16 PM PDT
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Synth 8-2778] type error near le ; expected type std_logic_vector [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:76]", 0); // b (D, S)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Synth 8-2778] type error near le ; expected type std_logic_vector [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:76]", 0, false, false, false, false, true); // b (D, S) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // S (ck)
+selectCodeEditor("ALU.vhd", 58, 281); // ce (w, ck)
+// Elapsed time: 107 seconds
+selectCodeEditor("ALU.vhd", 175, 278); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 83, 280); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("ALU.vhd", 347, 286); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("ALU.vhd", 93, 263); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("ALU.vhd", 88, 310); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("ALU.vhd", 332, 213); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (ck): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (ck)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: ALU 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 978.004 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: 	Parameter width bound to: 16 - type: integer  	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:46] INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (1#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:49] INFO: [Synth 8-638] synthesizing module 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftRight' (2#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: ERROR: [Synth 8-690] width mismatch in assignment; target has 2 bits, source has 1 bits [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:52] ERROR: [Synth 8-285] failed synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 981.266 ; gain = 3.262 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 7 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dP' command handler elapsed time: 4 seconds
+// S (ck): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (ck)
+dismissDialog("Critical Messages"); // S (ck)
+selectCodeEditor("ALU.vhd", 405, 276); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 417, 283); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (ck): Elaborate Design: addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: ELABORATE_START
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: ALU 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 981.266 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: 	Parameter width bound to: 16 - type: integer  	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:46] INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (1#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:49] INFO: [Synth 8-638] synthesizing module 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftRight' (2#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: ERROR: [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58] ERROR: [Synth 8-285] failed synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 982.531 ; gain = 1.266 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 7 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dP' command handler elapsed time: 6 seconds
+// S (ck): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (ck)
+dismissDialog("Critical Messages"); // S (ck)
+selectCodeEditor("ALU.vhd", 485, 308, false, true, false, false, false); // ce (w, ck) - Control Key
+typeControlKey(null, null, 'z');
+selectCodeEditor("ALU.vhd", 415, 270); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("ALU.vhd", 413, 286); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 91, 212); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 90, 263); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 93, 318); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 90, 367); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 96, 417); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 339, 418); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 336, 369); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 373, 316); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 343, 265); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 341, 211); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (ck): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (ck)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: ALU 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 982.531 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: 	Parameter width bound to: 16 - type: integer  	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:46] INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (1#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:49] INFO: [Synth 8-638] synthesizing module 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftRight' (2#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: ERROR: [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58] ERROR: [Synth 8-285] failed synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 984.746 ; gain = 2.215 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 7 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dP' command handler elapsed time: 4 seconds
+// S (ck): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (ck)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58]", 0); // b (D, S)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58]", 0, false, false, false, false, true); // b (D, S) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // S (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58]. ]", 2, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\mgamlem19\Desktop\super-octo-train\MP2\ALU\ALU.srcs\sources_1\new\ALU.vhd;-;;-;16;-;line;-;58;-;;-;16;-;"); // ah (O, ck)
+selectCodeEditor("ALU.vhd", 288, 319); // ce (w, ck)
+// Elapsed time: 28 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (ck): Elaborate Design: addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (ck)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: ALU 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: ELABORATE_START
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 985.430 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: 	Parameter width bound to: 16 - type: integer  	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:46] INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (1#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:49] INFO: [Synth 8-638] synthesizing module 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftRight' (2#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: ERROR: [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58] ERROR: [Synth 8-285] failed synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 985.840 ; gain = 0.410 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 7 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dP' command handler elapsed time: 5 seconds
+// S (ck): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58]. ]", 2, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58]. ]", 2, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58]. ]", 2, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58]. ]", 2, true, false, false, false, true, false); // ah (O, ck) - Popup Trigger - Node
+// Elapsed time: 39 seconds
+dismissDialog("Critical Messages"); // S (ck)
+selectCodeEditor("ALU.vhd", 288, 286); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("ALU.vhd", 106, 366); // ce (w, ck)
+// [GUI Memory]: 102 MB (+95kb) [00:24:11]
+// Elapsed time: 57 seconds
+selectCodeEditor("ALU.vhd", 349, 338); // ce (w, ck)
+// Elapsed time: 117 seconds
+selectCodeEditor("ALU.vhd", 158, 366); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 72 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58]. ]", 2); // ah (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (ck): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (ck)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: ALU 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 991.250 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-2810] unit behavioral ignored due to previous errors [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 991.250 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 1 Infos, 0 Warnings, 0 Critical Warnings and 8 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dP' command handler elapsed time: 4 seconds
+// S (ck): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (ck)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (ck)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58]. ]", 2); // ah (O, ck)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-2778] type error near le ; expected type std_logic_vector [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:76]. ]", 5); // ah (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (ck): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (ck)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: ALU 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 991.250 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-2810] unit behavioral ignored due to previous errors [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 991.250 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 1 Infos, 0 Warnings, 0 Critical Warnings and 8 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dP' command handler elapsed time: 3 seconds
+// S (ck): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (ck)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (ck)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-2778] type error near le ; expected type std_logic_vector [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:76]. ]", 5); // ah (O, ck)
+selectCodeEditor("ALU.vhd", 73, 262); // ce (w, ck)
+// Elapsed time: 47 seconds
+selectCodeEditor("ALU.vhd", 349, 176); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("ALU.vhd", 86, 164); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 97, 162, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_REPLACE_TEXT, "Replace..."); // ad (aj, Popup.HeavyWeightWindow)
+// Elapsed time: 15 seconds
+selectComboBox("FindAndReplaceDialog.ck_Replace with:", "11", -1); // JComboBox (ck, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.ck_Find", "Find"); // JButton (ck, FindAndReplaceDialog)
+// Elapsed time: 12 seconds
+selectCodeEditor("ALU.vhd", 334, 249); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 350, 248, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_REPLACE_TEXT, "Replace..."); // ad (aj, Popup.HeavyWeightWindow)
+selectComboBox("FindAndReplaceDialog.ck_Replace with:", "00", -1); // JComboBox (ck, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.ck_Find", "Find"); // JButton (ck, FindAndReplaceDialog)
+selectCodeEditor("ALU.vhd", 326, 355); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (ck): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (ck)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: ALU 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 992.957 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: ERROR: [Synth 8-2772] type std_ulogic does not match with a string literal [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58] 
+// Tcl Message: INFO: [Synth 8-2810] unit behavioral ignored due to previous errors [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 992.957 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 1 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dP' command handler elapsed time: 3 seconds
+// S (ck): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (ck)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-2772] type std_ulogic does not match with a string literal [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58]. ]", 6, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\mgamlem19\Desktop\super-octo-train\MP2\ALU\ALU.srcs\sources_1\new\ALU.vhd;-;;-;16;-;line;-;58;-;;-;16;-;"); // ah (O, ck)
+// Elapsed time: 13 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (ck): Elaborate Design: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (ck)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: ALU 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 992.957 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: 	Parameter width bound to: 16 - type: integer  	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:46] INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (1#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:49] INFO: [Synth 8-638] synthesizing module 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftRight' (2#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: ERROR: [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58] ERROR: [Synth 8-285] failed synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 992.957 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 7 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dP' command handler elapsed time: 5 seconds
+// S (ck): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (ck)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-2778] type error near le ; expected type std_logic_vector [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:76]. ]", 5, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-2778] type error near le ; expected type std_logic_vector [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:76]. , [Synth 8-2778] type error near lt ; expected type std_logic_vector [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:81]. ]", 10, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-2778] type error near le ; expected type std_logic_vector [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:76]. , [Synth 8-2778] type error near ge ; expected type std_logic_vector [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:77]. ]", 6, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-2778] type error near le ; expected type std_logic_vector [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:76]. , [Synth 8-2778] type error near ge ; expected type std_logic_vector [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:77]. ]", 6, false, false, false, false, false, true); // ah (O, ck) - Double Click
+// Elapsed time: 15 seconds
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // B (f, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (ck): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (ck)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: ALU 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 992.957 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: 	Parameter width bound to: 16 - type: integer  	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:46] INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (1#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:49] INFO: [Synth 8-638] synthesizing module 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftRight' (2#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: ERROR: [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58] ERROR: [Synth 8-285] failed synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 992.957 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 7 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dP' command handler elapsed time: 4 seconds
+// S (ck): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (ck)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58]. ]", 2, false); // ah (O, ck)
+// Elapsed time: 120 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58]. ]", 2, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\mgamlem19\Desktop\super-octo-train\MP2\ALU\ALU.srcs\sources_1\new\ALU.vhd;-;;-;16;-;line;-;58;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58]. ]", 2, false, false, false, false, true, false); // ah (O, ck) - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 828 MB. GUI used memory: 45 MB. Current time: 4/5/19 2:43:06 PM PDT
+// Elapsed time: 36 seconds
+selectCodeEditor("ALU.vhd", 286, 261); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("ALU.vhd", 68, 197); // ce (w, ck)
+// Elapsed time: 161 seconds
+selectCodeEditor("ALU.vhd", 79, 80); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 251, 61); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 310, 81); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 87, 246); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("ALU.vhd", 88, 303); // ce (w, ck)
+// Elapsed time: 29 seconds
+selectCodeEditor("ALU.vhd", 87, 302); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 503, 298); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("ALU.vhd", 84, 299); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 127, 308); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 86, 303); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 85, 303, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("ALU.vhd", 85, 303); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 87, 299, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("ALU.vhd", 85, 299); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 85, 299); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 452, 298); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'v'); // ce (w, ck)
+// Elapsed time: 32 seconds
+selectCodeEditor("ALU.vhd", 282, 233); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 185, 295); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 191, 302); // ce (w, ck)
+// Elapsed time: 57 seconds
+selectCodeEditor("ALU.vhd", 118, 304); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 116, 304, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 24 seconds
+selectCodeEditor("ALU.vhd", 233, 301); // ce (w, ck)
+// Elapsed time: 12 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("ALU.vhd", 90, 302); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 518, 304); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 510, 295); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 650, 282); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("ALU.vhd", 87, 297); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 83, 352); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 85, 401); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 84, 451); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 85, 351); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 511, 149); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 521, 197); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 521, 197, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("ALU.vhd", 527, 196); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 512, 198); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 514, 147); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 511, 193); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 539, 242); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 503, 298); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 505, 349); // ce (w, ck)
+typeControlKey((HResource) null, "ALU.vhd", 'v'); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (ck): Elaborate Design: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (ck)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: ALU 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 999.754 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: 	Parameter width bound to: 16 - type: integer  	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:45] INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (1#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:48] INFO: [Synth 8-638] synthesizing module 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftRight' (2#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: ERROR: [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:57] ERROR: [Synth 8-285] failed synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 999.754 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 7 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dP' command handler elapsed time: 4 seconds
+// S (ck): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (ck)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58]. ]", 2, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\mgamlem19\Desktop\super-octo-train\MP2\ALU\ALU.srcs\sources_1\new\ALU.vhd;-;;-;16;-;line;-;58;-;;-;16;-;"); // ah (O, ck)
+// Elapsed time: 19 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58]. ]", 2, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\mgamlem19\Desktop\super-octo-train\MP2\ALU\ALU.srcs\sources_1\new\ALU.vhd;-;;-;16;-;line;-;58;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58]. ]", 2, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-211] could not evaluate expression: OTHERS in array aggregate without constraining context [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:58]. ]", 2, true, false, false, false, true, false); // ah (O, ck) - Popup Trigger - Node
+// Elapsed time: 18 seconds
+selectCodeEditor("ALU.vhd", 387, 246); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (ck): Elaborate Design: addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: ALU 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: ELABORATE_START
+// [Engine Memory]: 942 MB (+99915kb) [00:44:30]
+// TclEventType: ELABORATE_FINISH
+// HMemoryUtils.trashcanNow. Engine heap size: 942 MB. GUI used memory: 45 MB. Current time: 4/5/19 2:53:16 PM PDT
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,080 MB. GUI used memory: 45 MB. Current time: 4/5/19 2:53:21 PM PDT
+// [Engine Memory]: 1,082 MB (+97294kb) [00:44:37]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [GUI Memory]: 108 MB (+1044kb) [00:44:38]
+// [Engine Memory]: 1,161 MB (+26045kb) [00:44:38]
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 999.754 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: 	Parameter width bound to: 16 - type: integer  	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:45] INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (1#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:48] INFO: [Synth 8-638] synthesizing module 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftRight' (2#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ALU' (3#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 999.754 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 999.754 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 999.754 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1335.324 ; gain = 335.570 
+// Tcl Message: 12 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1335.324 ; gain = 335.570 
+// 'dP' command handler elapsed time: 18 seconds
+// Elapsed time: 16 seconds
+dismissDialog("Open Elaborated Design"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+floatView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_SCHEMATIC: Schematic: float view
+maximizeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aw (aE, aG)
+// [GUI Memory]: 115 MB (+1572kb) [00:45:03]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,222 MB. GUI used memory: 79 MB. Current time: 4/5/19 2:53:51 PM PDT
+// [Engine Memory]: 1,222 MB (+3420kb) [00:45:07]
+// Elapsed time: 53 seconds
+selectCodeEditor("ALU.vhd", 65, 207); // ce (w, ck)
+selectCodeEditor("ALU.vhd", 65, 207, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("ALU.vhd", 75, 217, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(PAResourceOtoP.PACodeEditor_FIND_IN_FILES, "Find in Files..."); // ad (aj, Popup.HeavyWeightWindow)
+// Find in Files: addNotify
+selectButton(PAResourceEtoH.FindAndReplaceAllDialog_FIND, "Find"); // v (q)
+// bx (ck):  Find in Files : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,229 MB. GUI used memory: 80 MB. Current time: 4/5/19 2:54:36 PM PDT
+dismissDialog("Find in Files"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,229 MB. GUI used memory: 81 MB. Current time: 4/5/19 2:54:36 PM PDT
+expandTree(PAResourceEtoH.FindInFilesView_ROOT, "[ROOT]", 1); // W (O, ck)
+selectTree(PAResourceEtoH.FindInFilesView_ROOT, "[ROOT, [459, 463]]", 2, false); // W (O, ck)
+selectTree(PAResourceEtoH.FindInFilesView_ROOT, "[ROOT, [1264, 1268]]", 3, false); // W (O, ck)
+selectTree(PAResourceEtoH.FindInFilesView_ROOT, "[ROOT, [3322, 3326]]", 4, false); // W (O, ck)
+selectTree(PAResourceEtoH.FindInFilesView_ROOT, "[ROOT, [3354, 3358]]", 5, false); // W (O, ck)
+selectTree(PAResourceEtoH.FindInFilesView_ROOT, "[ROOT, [3386, 3390]]", 6, false); // W (O, ck)
+selectCodeEditor("ALU.vhd", 335, 417); // ce (w, ck)
+// Elapsed time: 36 seconds
+selectCodeEditor("ALU.vhd", 340, 167); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cM, ck)
+// bx (ck):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1444.852 ; gain = 8.152 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FAIL
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: 	Parameter width bound to: 16 - type: integer  	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:45] INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (1#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: ERROR: [Synth 8-549] port width mismatch for port 'shamt': port width = 4, actual width = 16 [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:45] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:48] 
+// Tcl Message: ERROR: [Synth 8-285] failed synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1466.973 ; gain = 30.273 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.  
+// S (ck): Critical Messages: addNotify
+dismissDialog("Reloading"); // bx (ck)
+dismissDialog("Critical Messages"); // S (ck)
+selectCodeEditor("ALU.vhd", 70, 73); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 80 MB. Current time: 4/5/19 2:55:41 PM PDT
+selectCodeEditor("ALU.vhd", 383, 113); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 121 MB (+184kb) [00:47:03]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cM, ck)
+// bx (ck):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: ELABORATE_START
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 1,275 MB. GUI used memory: 61 MB. Current time: 4/5/19 2:55:52 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,275 MB. GUI used memory: 60 MB. Current time: 4/5/19 2:55:52 PM PDT
+dockFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aw (aE, aG)
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1470.395 ; gain = 0.074 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: 	Parameter width bound to: 16 - type: integer  	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:45] INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (1#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/left_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:48] INFO: [Synth 8-638] synthesizing module 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ShiftRight' (2#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/right_shifter.vhd:20] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ALU' (3#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sources_1/new/ALU.vhd:16] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1473.371 ; gain = 3.051 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1473.371 ; gain = 3.051 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1473.371 ; gain = 3.051 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,275 MB. GUI used memory: 56 MB. Current time: 4/5/19 2:55:53 PM PDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1503.531 ; gain = 33.211 
+dismissDialog("Reloading"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, ck)
+floatView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_SCHEMATIC: Schematic: float view
+maximizeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aw (aE, aG)
+// [GUI Memory]: 129 MB (+2356kb) [00:47:38]
+// [GUI Memory]: 135 MB (+102kb) [00:47:48]
+// Elapsed time: 272 seconds
+selectCodeEditor("ALU.vhd", 173, 191); // ce (w, ck)

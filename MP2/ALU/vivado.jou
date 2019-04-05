@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Fri Apr  5 14:08:31 2019
+# Process ID: 7512
+# Current directory: C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9984 C:\Users\mgamlem19\Desktop\super-octo-train\MP2\ALU\ALU.xpr
+# Log file: C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/vivado.log
+# Journal file: C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+refresh_design
+refresh_design

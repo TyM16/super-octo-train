@@ -48,22 +48,22 @@ begin
       shifter_r: ShiftRight generic map (N => 16) port map(a=>input_a, shamt=>shift, c => sr);
       
       -- less than or equal
-      le <= "1" when ( input_a <= input_b) else "0";
+      le <= (width-1 downto 1 => '0')&"1" when (input_a <= input_b) else (others => '0');
       
       -- greater than or equal
-      ge <= "1" when ( input_a >= input_b) else "0";
+      ge <= (width-1 downto 1 => '0')&"1" when (input_a >= input_b) else (others => '0');
       
       -- equal
-      eq <= "1" when ( sub = (others => '0') ) else "0";
+      eq <= (width-1 downto 1 => '0')&"1" when (sub = (width-1 downto 0 => '0') ) else (others => '0');
       
       -- less than or equal
-      lt <= "1" when ( input_a < input_b) else "0";
+      lt <= (width-1 downto 1 => '0')&"1" when (input_a < input_b) else (others => '0');
            
       -- greater than or equal
-      gt <= "1" when ( input_a > input_b) else "0";
+      gt <= (width-1 downto 1 => '0')&"1" when (input_a > input_b) else (others => '0');
           
       -- determine alu operation from alucontrol bits 0 and 1
-      with alucontrol(1 downto 0) select result <=
+      with alucontrol(3 downto 0) select result <=
         sum                  when "0000",
         sub                  when "0001",
         sr                   when "0010",
