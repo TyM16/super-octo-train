@@ -30,3 +30,34 @@ synth_design -rtl -name rtl_1
 synth_design -rtl -name rtl_1
 refresh_design
 refresh_design
+refresh_design
+refresh_design
+file mkdir C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sim_1/new/ALU_testbench.vhd w ]
+add_files -fileset sim_1 C:/Users/mgamlem19/Desktop/super-octo-train/MP2/ALU/ALU.srcs/sim_1/new/ALU_testbench.vhd
+update_compile_order -fileset sim_1
+launch_simulation
+source ALU.tcl
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
