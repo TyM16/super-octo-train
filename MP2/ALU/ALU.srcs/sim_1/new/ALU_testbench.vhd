@@ -41,6 +41,7 @@ begin
     
     shift_proc: process begin
         shift <= "0001";
+        wait for 20ns;
     end process;
     
     alu_control_proc: process begin
