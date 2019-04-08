@@ -17,7 +17,7 @@ architecture ALU_testbench of ALU_testbench is
             zero:                      out STD_LOGIC);
     end component;
     
-    signal input_a, input_b, result:    STD_LOGIC_VECTOR(16 downto 0);
+    signal input_a, input_b, result:    STD_LOGIC_VECTOR(15 downto 0);
     signal shift, alucontrol:           STD_LOGIC_VECTOR(3 downto 0);
     signal zero:                        STD_LOGIC;
     
