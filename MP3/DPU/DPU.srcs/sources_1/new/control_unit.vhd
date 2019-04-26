@@ -1,43 +1,38 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 04/26/2019 09:19:33 AM
--- Design Name: 
--- Module Name: control_unit - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.math_real.all;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+entity controller is -- single cycle control decoder
+  port(op, funct:          in  STD_LOGIC_VECTOR(5 downto 0);
+       zero:               in  STD_LOGIC;
+       memtoreg, memwrite: out STD_LOGIC;
+       pcsrc, alusrc:      out STD_LOGIC;
+       regdst, regwrite:   out STD_LOGIC;
+       jump:               out STD_LOGIC;
+       alucontrol:         out STD_LOGIC_VECTOR(2 downto 0));
+end;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
-entity control_unit is
---  Port ( );
-end control_unit;
-
-architecture Behavioral of control_unit is
-
+architecture struct of controller is
+  component maindec
+    port(op:                  in  STD_LOGIC_VECTOR(5 downto 0);
+         memtoreg, memwrite:  out STD_LOGIC;
+         branch, bne, alusrc: out STD_LOGIC; --added bne port here.
+         regdst, regwrite:    out STD_LOGIC;
+         jump:                out STD_LOGIC;
+         aluop:               out  STD_LOGIC_VECTOR(1 downto 0));
+  end component;
+  component aludec
+    port(funct:      in  STD_LOGIC_VECTOR(5 downto 0);
+         aluop:      in  STD_LOGIC_VECTOR(1 downto 0);
+         alucontrol: out STD_LOGIC_VECTOR(2 downto 0));
+  end component;
+  signal aluop: STD_LOGIC_VECTOR(1 downto 0);
+  signal branch: STD_LOGIC;
+  signal bne: STD_LOGIC; --added bne signal here.
 begin
+  md: maindec port map( op => op, memtoreg => memtoreg, memwrite => memwrite, branch => branch, bne => bne,
+                       alusrc => alusrc, regdst => regdst, regwrite => regwrite, jump => jump, aluop => aluop);
+  ad: aludec port map(funct => funct, aluop => aluop, alucontrol => alucontrol);
 
-
-end Behavioral;
+  pcsrc <= ((branch and zero) or (bne and not zero)); --Add hardware for bne instruction, used or to prevent the blue smoke of death.
+end;
