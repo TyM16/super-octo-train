@@ -37,15 +37,25 @@ begin
     end case;
   end process;
 
-  bne      <= controls(9);
-  regwrite <= controls(8);
-  regdst   <= controls(7);
-  alusrc   <= controls(6);
-  branch   <= controls(5);
-  memwrite <= controls(4);
-  memtoreg <= controls(3);
-  jump     <= controls(2);
-  aluop    <= controls(1 downto 0);
+  aluop <= controls(13 downto 9);
+  memWrite <= controls(8);
+  memRead <= controls(7);
+  memDest <= controls(6 downto 3);
+  branch <= controls(2);
+  bne <= controls(1);
+  pcSrc <= controls(0);
+  
+  
+  
+--  bne      <= controls(9);
+--  regwrite <= controls(8);
+--  regdst   <= controls(7);
+--  alusrc   <= controls(6);
+--  branch   <= controls(5);
+--  memwrite <= controls(4);
+--  memtoreg <= controls(3);
+--  jump     <= controls(2);
+--  aluop    <= controls(1 downto 0);
 end;
 
 
