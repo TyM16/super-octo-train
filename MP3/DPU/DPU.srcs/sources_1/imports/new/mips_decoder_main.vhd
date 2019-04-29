@@ -16,13 +16,23 @@ architecture behave of maindec is
 begin
   process(op) begin
     case op is
-      when "000000" => controls <= "1100000100"; -- Rtype
-      when "100011" => controls <= "1010010000"; -- LW
-      when "101011" => controls <= "0X101X0000"; -- SW
-      when "000100" => controls <= "0X010X0010"; -- BEQ
-      when "000101" => controls <= "0X000X0011"; -- BNE
-      when "001000" => controls <= "1010000000"; -- ADDI
-      when "000010" => controls <= "0XXX0X1XX0"; -- J
+      when "00000" => controls <= "000000000XXXXXX00X0"; -- ADD
+      when "00001" => controls <= "000010001XXXXXX00X0"; -- SUB
+      when "00010" => controls <= "00010XXXXXXXXXX11X1"; -- JUMP
+      when "00011" => controls <= "000111010XXXXXX1011"; -- BE
+      when "00100" => controls <= "001001010XXXXXX0101"; -- BNE
+      when "00101" => controls <= "001010100XXXXXX00X0"; -- AND
+      when "00110" => controls <= "001100100XXXXXX00X0"; -- NAND
+      when "00111" => controls <= "001110101XXXXXX00X0"; -- OR
+      when "01000" => controls <= "010000111XXXXXX00X0"; -- NOR
+      when "01001" => controls <= "010011110XXXXXX01??"; -- BGZ
+      when "01010" => controls <= "010101101XXXXXX01??"; -- BLZ
+      when "01011" => controls <= "010110010XXXXXX00X0"; -- SR
+      when "01100" => controls <= "011000011XXXXXX00X0"; -- SL
+      when "01101" => controls <= "01101XXXXX1XXXXXXX0"; -- LW
+      when "01110" => controls <= "01110XXXX1XXXXXXXX0"; -- SW
+      when "01111" => controls <= "1100000100"; -- Rtype
+      when "10000" => controls <= "1100000100"; -- Rtype
       when others   => controls <= "----------"; -- illegal op
     end case;
   end process;
