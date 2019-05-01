@@ -3,12 +3,13 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 
 entity maindec is -- main control decoder
-  port(op:                 in  STD_LOGIC_VECTOR(5 downto 0);
-       memtoreg, memwrite, memread: out STD_LOGIC; -- we may not need mem to reg it may be 
-       branch, bne, alusrc:     out STD_LOGIC;
-       regdest, regwrite:   out STD_LOGIC;
-       jump:               out STD_LOGIC;
-       aluop:              out  STD_LOGIC_VECTOR(1 downto 0));
+  port(op:                               in  STD_LOGIC_VECTOR(5 downto 0);
+       memtoreg, memwrite, memread:      out STD_LOGIC; -- we may not need mem to reg it may be 
+       branch, bne, alusrc:              out STD_LOGIC;
+       regdest:                          out STD_LOGIC_VECTOR(3 downto 0);
+       regwrite:                         out STD_LOGIC;
+       jump:                             out STD_LOGIC;
+       aluop:                            out  STD_LOGIC_VECTOR(3 downto 0));
 end;
 
 architecture behave of maindec is
@@ -45,7 +46,7 @@ begin
   regdest  <= controls(7 downto 4);
   memread  <= controls(8);
   memwrite <= controls(9);
-  aluop    <= controls(13 downto 10);
+  aluop    <= controls(13 downto 10); -- send this directly to ALU
 end;
 
 

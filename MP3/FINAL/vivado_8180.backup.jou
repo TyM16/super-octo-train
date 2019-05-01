@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Mon Apr 29 12:11:27 2019
+# Process ID: 8180
+# Current directory: C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7416 C:\Users\mgamlem19\Desktop\super-octo-train\MP3\FINAL\mips.xpr
+# Log file: C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/vivado.log
+# Journal file: C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.xpr
+synth_design -rtl -name rtl_1
