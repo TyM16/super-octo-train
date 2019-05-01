@@ -13,7 +13,7 @@ entity regfile is
   port(clk:           in  STD_LOGIC;
        we3:           in  STD_LOGIC;
 	   -- determine number of address bits based on generic width
-       ra1, ra2, wa3: in  STD_LOGIC_VECTOR( (integer(ceil(log2(real(width))))-1) downto 0);
+       ra1, ra2, wa3: in  STD_LOGIC_VECTOR( 3 downto 0);
        wd3:           in  STD_LOGIC_VECTOR((width-1) downto 0);
        rd1, rd2:      out STD_LOGIC_VECTOR((width-1) downto 0));
 end;

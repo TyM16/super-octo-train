@@ -39,7 +39,7 @@ architecture computer_top of computer_top is
     port( 
          clk : in STD_LOGIC;
          reset: in STD_LOGIC;
-         out_port_1 : out STD_LOGIC_VECTOR(31 downto 0)
+         out_port_1 : out STD_LOGIC_VECTOR(15 downto 0)
          );
   end component;
   

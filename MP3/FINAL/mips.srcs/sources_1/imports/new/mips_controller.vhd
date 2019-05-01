@@ -3,13 +3,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.math_real.all;
 
 entity controller is -- single cycle control decoder
-  port(op, funct:          in  STD_LOGIC_VECTOR(5 downto 0);
-       zero:               in  STD_LOGIC;
+  port(input_a, input_b:   in STD_LOGIC_VECTOR(15 downto 0);
+       shift:              in STD_LOGIC_VECTOR(3 downto 0);
+       op, funct:          in  STD_LOGIC_VECTOR(5 downto 0);
+       zero:               out  STD_LOGIC;
        memtoreg, memwrite: out STD_LOGIC;
        pcsrc, alusrc:      out STD_LOGIC;
-       regdst, regwrite:   out STD_LOGIC;
+       result:             inout STD_LOGIC_VECTOR(15 downto 0);
+       regdst:             out STD_LOGIC_VECTOR(3 downto 0);
+       regwrite:           out STD_LOGIC;
        jump:               out STD_LOGIC;
-       alucontrol:         out STD_LOGIC_VECTOR(2 downto 0));
+       alucontrol:         in STD_LOGIC_VECTOR(3 downto 0));
 end;
 
 architecture struct of controller is
@@ -36,14 +40,14 @@ architecture struct of controller is
 --         alucontrol: out STD_LOGIC_VECTOR(2 downto 0));
 --  end component;
 
-  signal aluop: STD_LOGIC_VECTOR(1 downto 0);
+  signal aluop: STD_LOGIC_VECTOR(3 downto 0);
   signal branch: STD_LOGIC;
 begin
   md: maindec port map( op => op, memtoreg => memtoreg, memwrite => memwrite, branch => branch,
-                       alusrc => alusrc, regdst => regdst, regwrite => regwrite, jump => jump, aluop => aluop);
+                       alusrc => alusrc, regdest => regdst, regwrite => regwrite, jump => jump, aluop => aluop);
 --  ad: aludec port map(funct => funct, aluop => aluop, alucontrol => alucontrol);
-    alu: ALU port map(
-  pcsrc <= branch and zero;
+
+  alu_p: ALU port map( input_a => input_a, input_b => input_b, shift => shift, alucontrol => alucontrol, result => result, zero => zero );
 end;
 
 

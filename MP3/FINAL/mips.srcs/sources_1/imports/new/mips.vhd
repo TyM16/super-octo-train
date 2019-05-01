@@ -29,31 +29,34 @@ end;
 architecture struct of mips is
   component controller
     port(op, funct:          in  STD_LOGIC_VECTOR(5 downto 0);
-         zero:               in  STD_LOGIC;
+         zero:               inout  STD_LOGIC;
          memtoreg, memwrite: out STD_LOGIC;
          pcsrc, alusrc:      out STD_LOGIC;
-         regdst, regwrite:   out STD_LOGIC;
+         regdst:            out STD_LOGIC_VECTOR(3 downto 0);
+         regwrite:           out STD_LOGIC;
          jump:               out STD_LOGIC;
-         alucontrol:         out STD_LOGIC_VECTOR(2 downto 0));
+         alucontrol:         in STD_LOGIC_VECTOR(3 downto 0));
   end component;
   
   component datapath generic(width : integer );
-  port(clk, reset:        in  STD_LOGIC;
-       memtoreg, pcsrc:   in  STD_LOGIC;
-       alusrc, regdst:    in  STD_LOGIC;
-       regwrite, jump:    in  STD_LOGIC;
-       alucontrol:        in  STD_LOGIC_VECTOR(2 downto 0);
-       zero:              out STD_LOGIC;
-       pc:                inout STD_LOGIC_VECTOR((width-1) downto 0);
-       instr:             in  STD_LOGIC_VECTOR((width-1) downto 0);
-       aluout, writedata: inout STD_LOGIC_VECTOR((width-1) downto 0);
-       readdata:          in  STD_LOGIC_VECTOR((width-1) downto 0));
+  port(clk, reset:          in  STD_LOGIC;
+         memtoreg, pcsrc:   in  STD_LOGIC;
+         alusrc:            in  STD_LOGIC;
+         regdst:            in STD_LOGIC_VECTOR(3 downto 0);
+         regwrite, jump:    in  STD_LOGIC;
+         alucontrol:        in  STD_LOGIC_VECTOR(3 downto 0);
+         zero:              out STD_LOGIC;
+         pc:                inout STD_LOGIC_VECTOR((width-1) downto 0);
+         instr:             in  STD_LOGIC_VECTOR((width-1) downto 0);
+         aluout, writedata: inout STD_LOGIC_VECTOR((width-1) downto 0);
+         readdata:          in  STD_LOGIC_VECTOR((width-1) downto 0));
   end component;
   
   -- Signals to wire the datapath unit to the controller unit
-  signal memtoreg, alusrc, regdst, regwrite, jump, pcsrc: STD_LOGIC;
+  signal memtoreg, alusrc, regwrite, jump, pcsrc: STD_LOGIC;
+  signal regdst: STD_LOGIC_VECTOR(3 downto 0);
   signal zero: STD_LOGIC;
-  signal alucontrol: STD_LOGIC_VECTOR(2 downto 0);
+  signal alucontrol: STD_LOGIC_VECTOR(3 downto 0);
   
 begin
   cont: controller port map( op => instr((width-1) downto 26), funct => instr(5 downto 0),

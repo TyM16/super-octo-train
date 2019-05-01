@@ -7,9 +7,10 @@ entity datapath is  -- MIPS datapath
   generic(width: integer);
   port(clk, reset:        in  STD_LOGIC;
        memtoreg, pcsrc:   in  STD_LOGIC;
-       alusrc, regdst:    in  STD_LOGIC;
+       alusrc:            in  STD_LOGIC;
+       regdst:            in STD_LOGIC_VECTOR(3 downto 0);
        regwrite, jump:    in  STD_LOGIC;
-       alucontrol:        in  STD_LOGIC_VECTOR(2 downto 0);
+       alucontrol:        in  STD_LOGIC_VECTOR(3 downto 0);
        zero:              out STD_LOGIC;
        pc:                inout STD_LOGIC_VECTOR((width-1) downto 0);
        instr:             in  STD_LOGIC_VECTOR((width-1) downto 0);
@@ -21,8 +22,8 @@ architecture struct of datapath is
 
   -- The datapath needs an ALU component
   component alu generic(width: integer);
-  port(a, b:       in  STD_LOGIC_VECTOR((width-1) downto 0);
-       alucontrol: in  STD_LOGIC_VECTOR(2 downto 0);
+  port(input_a, input_b:       in  STD_LOGIC_VECTOR((width-1) downto 0);
+       alucontrol: in  STD_LOGIC_VECTOR(3 downto 0);
        result:     inout STD_LOGIC_VECTOR((width-1) downto 0);
        zero:       out STD_LOGIC);
   end component;
@@ -32,7 +33,8 @@ architecture struct of datapath is
   port(clk:           in  STD_LOGIC;
        we3:           in  STD_LOGIC;
 	   -- determine number of address bits based on generic width component
-       ra1, ra2, wa3: in  STD_LOGIC_VECTOR( (integer(ceil(log2(real(width))))-1) downto 0);
+       ra1, ra2, wa3: in  STD_LOGIC_VECTOR( 3 downto 0);
+       --wa3:           in  STD_LOGIC_VECTOR(3 downto 0);
        wd3:           in  STD_LOGIC_VECTOR((width-1) downto 0);
        rd1, rd2:      out STD_LOGIC_VECTOR((width-1) downto 0));
   end component;
@@ -70,7 +72,7 @@ architecture struct of datapath is
   end component;
   
   -- The signals to wire the datapath components together
-  signal writereg: STD_LOGIC_VECTOR(4 downto 0);
+  signal writereg: STD_LOGIC_VECTOR(3 downto 0);
   signal pcjump, pcnext, pcnextbr, pcplus4, pcbranch: STD_LOGIC_VECTOR((width-1) downto 0);
   signal signimm, signimmsh: STD_LOGIC_VECTOR((width-1) downto 0);
   signal srca, srcb, result: STD_LOGIC_VECTOR((width-1) downto 0);
@@ -94,14 +96,14 @@ architecture struct of datapath is
 
 	-- register file logic
 	rf: regfile generic map(width) port map(clk => clk, we3 => regwrite, 
-	                                       ra1 => instr(25 downto 21), 
-	                                       ra2 => instr(20 downto 16),
+	                                       ra1 => instr(7 downto 4), 
+	                                       ra2 => instr(3 downto 0),
 										   wa3 => writereg, wd3 => result, 
 										   rd1 => srca, rd2 => writedata);
 
 	-- select destination register based on regdst signal
-	wrmux: mux2 generic map(5) port map( d0 => instr(20 downto 16), d1 => instr(15 downto 11),
-									      s => regdst, y => writereg);
+	wrmux: mux2 generic map(4) port map( d0 => instr(3 downto 0), d1 => instr(15 downto 12),
+									      s => regdst(0), y => writereg);
     
     -- select between alu output and data read from memory	
 	resmux: mux2 generic map(width) port map( d0 => aluout, d1 => readdata, 
@@ -115,7 +117,7 @@ architecture struct of datapath is
 	                                            s => alusrc, y => srcb);
 	
 	-- wire up the main ALU
-	mainalu:  alu generic map(width) port map(a => srca, b => srcb, 
+	mainalu:  alu generic map(width) port map(input_a => srca, input_b => srcb, 
 	                                          alucontrol => alucontrol, result => aluout, zero => zero);
 end;
 
