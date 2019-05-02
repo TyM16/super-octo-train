@@ -18,7 +18,7 @@ entity mips_top is -- top-level design for testing
   port( 
        clk : in STD_LOGIC;
        reset: in STD_LOGIC;
-       out_port_1 : out STD_LOGIC_VECTOR(15 downto 0)
+       out_port_1 : out STD_LOGIC_VECTOR(31 downto 0)
 	   );
 end;
 
@@ -59,7 +59,7 @@ architecture mips_top of mips_top is
   
   begin     
       -- wire output port signal
-      out_port_1 <= instr;
+      out_port_1 <= (others => '0');
       
 	  -- wire up the processor and memories
 	  mips1: mips generic map(16) port map(clk => clk, reset => reset, pc => pc, 
