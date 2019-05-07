@@ -35,7 +35,7 @@ architecture struct of mips is
          regdst:            out STD_LOGIC_VECTOR(3 downto 0);
          regwrite:           out STD_LOGIC;
          jump:               out STD_LOGIC;
-         alucontrol:         in STD_LOGIC_VECTOR(3 downto 0));
+         alucontrol:         out STD_LOGIC_VECTOR(3 downto 0));
   end component;
   
   component datapath generic(width : integer );

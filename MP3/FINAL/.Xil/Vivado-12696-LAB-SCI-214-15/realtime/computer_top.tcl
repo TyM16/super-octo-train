@@ -49,9 +49,9 @@ set rt::rc [catch {
       C:/Users/ushrestha20/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/display_hex.vhd
       C:/Users/ushrestha20/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd
       C:/Users/ushrestha20/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd
-      C:/Users/ushrestha20/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd
       C:/Users/ushrestha20/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/left_shifter.vhd
       C:/Users/ushrestha20/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/right_shifter.vhd
+      C:/Users/ushrestha20/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd
     }
       rt::filesetChecksum
     }
