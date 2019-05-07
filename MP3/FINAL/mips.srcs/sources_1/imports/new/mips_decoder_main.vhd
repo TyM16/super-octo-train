@@ -9,6 +9,7 @@ entity maindec is -- main control decoder
        regdest:                          out STD_LOGIC_VECTOR(3 downto 0);
        regwrite:                         out STD_LOGIC;
        jump:                             out STD_LOGIC;
+       pcsrc:                            out STD_LOGIC;
        aluop:                            out  STD_LOGIC_VECTOR(3 downto 0));
 end;
 
@@ -46,6 +47,8 @@ begin
   regdest  <= controls(7 downto 4);
   memread  <= controls(8);
   memwrite <= controls(9);
+  jump     <= controls(0);
+  pcsrc    <= controls(3);
   aluop    <= controls(13 downto 10); -- send this directly to ALU
 end;
 

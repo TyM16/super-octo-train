@@ -22,7 +22,9 @@ architecture struct of controller is
          regdest:                          out STD_LOGIC_VECTOR(3 downto 0);
          regwrite:                         out STD_LOGIC;
          jump:                             out STD_LOGIC;
+         pcsrc:                            out STD_LOGIC;
          aluop:                            out  STD_LOGIC_VECTOR(3 downto 0));
+         
   end component;
 
 --  component aludec
@@ -35,7 +37,7 @@ architecture struct of controller is
   signal branch: STD_LOGIC;
 begin
   md: maindec port map( op => op, memtoreg => memtoreg, memwrite => memwrite, branch => branch,
-                       alusrc => alusrc, regdest => regdst, regwrite => regwrite, jump => jump, aluop => aluop);
+                       alusrc => alusrc, regdest => regdst, regwrite => regwrite, jump => jump, aluop => aluop, pcsrc=>pcsrc);
 --  ad: aludec port map(funct => funct, aluop => aluop, alucontrol => alucontrol);
 end;
 
