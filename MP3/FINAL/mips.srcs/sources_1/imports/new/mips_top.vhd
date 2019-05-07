@@ -50,11 +50,11 @@ architecture mips_top of mips_top is
   end component;
 
   -- signals to wire the instruction memory, data memory and mips processor together
-  signal readdata: STD_LOGIC_VECTOR(15 downto 0);
-  signal instr: STD_LOGIC_VECTOR(15 downto 0);
-  signal writedata, dataadr: STD_LOGIC_VECTOR(15 downto 0);
+  signal readdata: STD_LOGIC_VECTOR(31 downto 0);
+  signal instr: STD_LOGIC_VECTOR(31 downto 0);
+  signal writedata, dataadr: STD_LOGIC_VECTOR(31 downto 0);
   signal memwrite: STD_LOGIC;
-  signal pc: STD_LOGIC_VECTOR(15 downto 0); 
+  signal pc: STD_LOGIC_VECTOR(31 downto 0); 
          
   
   begin     
@@ -62,11 +62,11 @@ architecture mips_top of mips_top is
       out_port_1 <= (others => '0');
       
 	  -- wire up the processor and memories
-	  mips1: mips generic map(16) port map(clk => clk, reset => reset, pc => pc, 
+	  mips1: mips generic map(32) port map(clk => clk, reset => reset, pc => pc, 
 	                                       instr => instr, memwrite => memwrite, aluout => dataadr, 
 	                                       writedata => writedata, readdata => readdata);
-	  imem1: imem generic map(16) port map( a => pc(7 downto 2), rd => instr);
-	  dmem1: dmem generic map(16) port map( clk => clk, we => memwrite, a => dataadr, 
+	  imem1: imem generic map(32) port map( a => pc(7 downto 2), rd => instr);
+	  dmem1: dmem generic map(32) port map( clk => clk, we => memwrite, a => dataadr, 
 	                                        wd => writedata, rd => readdata);  
   end mips_top;
 

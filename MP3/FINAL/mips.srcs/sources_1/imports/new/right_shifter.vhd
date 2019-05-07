@@ -11,9 +11,9 @@ use IEEE.NUMERIC_STD.all;
 use IEEE.math_real.all;
 
 entity ShiftRight is
-   generic ( N : integer := 16 );
+   generic ( N : integer := 32 );
    Port (    a : in  STD_LOGIC_VECTOR(N-1 downto 0);
-	     shamt : in STD_LOGIC_VECTOR(integer(ceil(log2(real(N))))-1 downto 0);
+	     shamt : in STD_LOGIC_VECTOR(integer(ceil(log2(real(N))))-2 downto 0);
              c : out  STD_LOGIC_VECTOR(N-1 downto 0) );
 end ShiftRight;
 

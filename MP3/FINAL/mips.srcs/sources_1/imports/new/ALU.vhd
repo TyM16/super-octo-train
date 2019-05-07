@@ -12,7 +12,7 @@ use ieee.numeric_std.all;
 use IEEE.math_real.all;
 
 entity ALU is
-    generic(width: integer := 16);
+    generic(width: integer := 32);
     port(input_a, input_b:  in STD_LOGIC_VECTOR((width-1) downto 0);
         shift:              in STD_LOGIC_VECTOR(3 downto 0);
         alucontrol:         in STD_LOGIC_VECTOR(3 downto 0);
@@ -23,16 +23,16 @@ end ALU;
 -- components for shifting bits
 architecture Behavioral of ALU is
    component ShiftLeft is
-   generic ( N : integer := 16 );
+   generic ( N : integer := 32 );
         Port (    a : in  STD_LOGIC_VECTOR(N-1 downto 0);
-            shamt : in STD_LOGIC_VECTOR(integer(ceil(log2(real(N))))-1 downto 0);
+            shamt : in STD_LOGIC_VECTOR(integer(ceil(log2(real(N))))-2 downto 0); -- Replaced with -2 in all instances of shamt declaration
                 c : out  STD_LOGIC_VECTOR(N-1 downto 0) );
     end component ShiftLeft;
 
     component ShiftRight is
-       generic ( N : integer := 16 );
+       generic ( N : integer := 32 );
        Port (    a : in  STD_LOGIC_VECTOR(N-1 downto 0);
-	         shamt : in STD_LOGIC_VECTOR(integer(ceil(log2(real(N))))-1 downto 0);
+	         shamt : in STD_LOGIC_VECTOR(integer(ceil(log2(real(N))))-2 downto 0);
                  c : out  STD_LOGIC_VECTOR(N-1 downto 0) );
     end component ShiftRight;
 
@@ -52,10 +52,10 @@ begin
       sub <= input_a - input_b;
       
       -- shift left
-      shifter_l: ShiftLeft generic map (N => 16) port map(a=>input_a, shamt=>shift, c => sl);
+      shifter_l: ShiftLeft generic map (N => 32) port map(a=>input_a, shamt=>shift, c => sl);
       
       -- shift right
-      shifter_r: ShiftRight generic map (N => 16) port map(a=>input_a, shamt=>shift, c => sr);
+      shifter_r: ShiftRight generic map (N => 32) port map(a=>input_a, shamt=>shift, c => sr);
       
       -- less than or equal
       le <= (width-1 downto 1 => '0')&"1" when (input_a <= input_b) else (others => '0');

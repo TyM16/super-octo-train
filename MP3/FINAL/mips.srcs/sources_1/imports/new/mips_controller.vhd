@@ -3,13 +3,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.math_real.all;
 
 entity controller is -- single cycle control decoder
-  port(input_a, input_b:   in STD_LOGIC_VECTOR(15 downto 0);
+  port(input_a, input_b:   in STD_LOGIC_VECTOR(31 downto 0);
        shift:              in STD_LOGIC_VECTOR(3 downto 0);
        op, funct:          in  STD_LOGIC_VECTOR(5 downto 0);
        zero:               out  STD_LOGIC;
        memtoreg, memwrite: out STD_LOGIC;
        pcsrc, alusrc:      out STD_LOGIC;
-       result:             inout STD_LOGIC_VECTOR(15 downto 0);
+       result:             inout STD_LOGIC_VECTOR(31 downto 0);
        regdst:             out STD_LOGIC_VECTOR(3 downto 0);
        regwrite:           out STD_LOGIC;
        jump:               out STD_LOGIC;
@@ -27,7 +27,7 @@ architecture struct of controller is
          aluop:                            out  STD_LOGIC_VECTOR(3 downto 0));
   end component;
   component ALU
-    generic(width: integer := 16);
+    generic(width: integer := 32);
      port(input_a, input_b:  in STD_LOGIC_VECTOR((width-1) downto 0);
          shift:              in STD_LOGIC_VECTOR(3 downto 0);
          alucontrol:         in STD_LOGIC_VECTOR(3 downto 0);

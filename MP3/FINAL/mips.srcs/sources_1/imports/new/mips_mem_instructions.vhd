@@ -23,7 +23,7 @@ architecture behave of imem is
   variable ch: character;
   variable index : integer;
   variable result: signed((width-1) downto 0);
-  variable tmpResult: signed(31 downto 0);
+  variable tmpResult: signed((2*width-1) downto 0);
   file mem_file: TEXT is in RamFileName;
   variable L: line;
   variable RAM : ramtype;
@@ -43,10 +43,10 @@ architecture behave of imem is
         --  convert character to a binary value from a hex value
         if '0' <= ch and ch <= '9' then
           tmpResult := result*16 + character'pos(ch) - character'pos('0') ;
-          result := tmpResult(15 downto 0);
+          result := tmpResult(31 downto 0);
         elsif 'a' <= ch and ch <= 'f' then
           tmpResult := result*16 + character'pos(ch) - character'pos('a')+10 ;
-          result := tmpResult(15 downto 0);
+          result := tmpResult(31 downto 0);
         else report "Format error on line " & integer'image(index)
           severity error;
         end if;
