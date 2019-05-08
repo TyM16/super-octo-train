@@ -37,7 +37,7 @@ architecture struct of controller is
   signal branch: STD_LOGIC;
 begin
   md: maindec port map( op => op, memtoreg => memtoreg, memwrite => memwrite, branch => branch,
-                       alusrc => alusrc, regdest => regdst, regwrite => regwrite, jump => jump, aluop => aluop, pcsrc=>pcsrc);
+                       alusrc => alusrc, regdest => regdst, regwrite => regwrite, jump => jump, aluop => alucontrol, pcsrc=>pcsrc);
 --  ad: aludec port map(funct => funct, aluop => aluop, alucontrol => alucontrol);
 end;
 
