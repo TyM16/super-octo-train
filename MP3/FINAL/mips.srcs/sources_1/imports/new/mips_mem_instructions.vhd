@@ -14,7 +14,7 @@ entity imem is -- instruction memory
   end;
 
 architecture behave of imem is
-  type ramtype is array (31 downto 0) of STD_LOGIC_VECTOR((width-1) downto 0);
+  type ramtype is array (63 downto 0) of STD_LOGIC_VECTOR((width-1) downto 0);
 
 
   -- function to initialize the instruction memory from a data file
@@ -29,7 +29,7 @@ architecture behave of imem is
   variable RAM : ramtype;
   begin
     -- initialize memory from a file
-    for i in 0 to 31 loop -- set all contents low
+    for i in 0 to 63 loop -- set all contents low
       RAM(i) := std_logic_vector(to_unsigned(0, width));
     end loop;
     index := 0;
