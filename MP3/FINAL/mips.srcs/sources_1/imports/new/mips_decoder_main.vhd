@@ -47,9 +47,8 @@ begin
   regdest  <= controls(7 downto 4);
   memread  <= controls(8);
   memwrite <= controls(9);
-  jump     <= controls(0);
-  pcsrc    <= controls(3);
-  aluop    <= controls(13 downto 10); -- send this directly to ALU
+  pcsrc    <= controls(0);
+  aluop    <= controls(17 downto 14); -- send this directly to ALU
 end;
 
 

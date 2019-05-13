@@ -59,7 +59,7 @@ architecture struct of mips is
   signal alucontrol: STD_LOGIC_VECTOR(3 downto 0);
   
 begin
-  cont: controller port map( op => instr((width-1) downto 26), funct => instr(5 downto 0),
+  cont: controller port map( op => instr(19 downto 14), funct => instr(5 downto 0),
                             zero => zero, memtoreg => memtoreg, memwrite => memwrite, 
                             pcsrc => pcsrc, alusrc => alusrc,
 				            regdst => regdst, regwrite => regwrite, 
