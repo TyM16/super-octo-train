@@ -10,12 +10,20 @@ entity computer_top is -- top-level design for testing
   port( 
        CLKM : in STD_LOGIC;
        A_TO_G : out STD_LOGIC_VECTOR(6 downto 0);
-       AN : out STD_LOGIC_VECTOR(7 downto 0);
+       AN : out STD_LOGIC_VECTOR(3 downto 0);
        DP : out STD_LOGIC;
-       LED : out  STD_LOGIC_VECTOR(3 downto 0);
-       reset : in STD_LOGIC
+       LED : out  STD_LOGIC_VECTOR(6 downto 0);
+       reset : in STD_LOGIC;
+       MISO : in STD_LOGIC;   -- Master In Slave Out, Pin 3, Port JA
+       SW : in STD_LOGIC_VECTOR( 2 downto 0); -- Switches 2, 1, and 0
+       SS : out STD_LOGIC;    -- Slave Select, Pin 1, Port JA
+       MOSI : out STD_LOGIC;  -- Master Out Slave In, Pin 2, Port JA
+       SCLK : out STD_LOGIC  -- Serial Clock, Pin 4, Port JA
 	   );
 end;
+
+
+
 
 ---------------------------------------------------------
 -- Architecture Definitions
@@ -23,16 +31,31 @@ end;
 
 architecture computer_top of computer_top is
 
-  component display_hex
-	port (
-		CLKM : in STD_LOGIC;
-        x : in STD_LOGIC_VECTOR(31 downto 0);
-        A_TO_G : out STD_LOGIC_VECTOR(6 downto 0);
-        AN : out STD_LOGIC_VECTOR(7 downto 0);
-        DP : out STD_LOGIC;
-        LED : out  STD_LOGIC_VECTOR(3 downto 0);
-        clk_div: out STD_LOGIC_VECTOR(28 downto 0)
-	 );
+--  component display_hex
+--	port (
+--		CLKM : in STD_LOGIC;
+--        x : in STD_LOGIC_VECTOR(31 downto 0);
+--        A_TO_G : out STD_LOGIC_VECTOR(6 downto 0);
+--        AN : out STD_LOGIC_VECTOR(7 downto 0);
+--        DP : out STD_LOGIC;
+--        LED : out  STD_LOGIC_VECTOR(3 downto 0);
+--        clk_div: out STD_LOGIC_VECTOR(28 downto 0)
+--	 );
+--  end component;
+  
+  component PmodJSTK_Demo
+   port (
+      CLK : in STD_LOGIC;   -- 100Mhz onboard clock
+      RST  : in STD_LOGIC;   -- Button D
+      MISO : in STD_LOGIC;   -- Master In Slave Out, Pin 3, Port JA
+      SW : in STD_LOGIC_VECTOR( 2 downto 0); -- Switches 2, 1, and 0
+      SS : out STD_LOGIC;    -- Slave Select, Pin 1, Port JA
+      MOSI : out STD_LOGIC;  -- Master Out Slave In, Pin 2, Port JA
+      SCLK : out STD_LOGIC;  -- Serial Clock, Pin 4, Port JA
+      LED : out STD_LOGIC_VECTOR( 2 downto 0 );  -- LEDs 2, 1, and 0
+      AN: out STD_LOGIC_VECTOR( 3 downto 0 );             -- Anodes for Seven Segment Display
+      SEG : out STD_LOGIC_VECTOR( 6 downto 0 )  -- Cathodes for Seven Segment Display
+   );
   end component;
 
   component mips_top  -- top-level design for testing
@@ -54,6 +77,8 @@ architecture computer_top of computer_top is
   -- this data bus will hold a value for display by the 
   -- hex display  
   signal display_bus: STD_LOGIC_VECTOR(31 downto 0); 
+  
+  signal res: STD_LOGIC;
          
   
   begin
@@ -63,8 +88,26 @@ architecture computer_top of computer_top is
            
 	  -- wire up the processor and memories
 	  mips1: mips_top port map( clk => clk, reset => reset, out_port_1 => display_bus );
+	  
+	  res <= not reset;
+	  
+	  -- joystick port map
+	  joystick: PmodJSTK_Demo port map(
+	  
+	        CLK => CLKM, 
+            RST => res,
+            MISO => MISO,
+            SW => SW,
+            SS => SS,
+            MOSI => MOSI,
+            SCLK => SCLK,
+            LED => LED( 6 downto 4 ),
+            AN => AN,
+            SEG => A_TO_G
+	  
+	   );
 	                                       
-	  display: display_hex port map( CLKM  => CLKM,  x => display_bus, 
-	           A_TO_G => A_TO_G,  AN => AN,  DP => DP,  LED => LED, clk_div => clk_div );                                      
+	  -- display: display_hex port map( CLKM  => CLKM,  x => display_bus, 
+	  --         A_TO_G => A_TO_G,  AN => AN,  DP => DP,  LED => LED(3 downto 0), clk_div => clk_div );                                      
 	  
   end computer_top;
