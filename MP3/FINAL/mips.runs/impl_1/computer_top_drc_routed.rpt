@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Mon May 13 13:50:30 2019
-| Host         : LAB-SCI-214-04 running 64-bit major release  (build 9200)
+| Date         : Mon May 13 14:59:12 2019
+| Host         : LAB-SCI-214-06 running 64-bit major release  (build 9200)
 | Command      : report_drc -file computer_top_drc_routed.rpt -pb computer_top_drc_routed.pb -rpx computer_top_drc_routed.rpx
 | Design       : computer_top
 | Device       : xc7a100tcsg324-1
@@ -24,11 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 1
+             Violations found: 8
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| RPBF-3   | Warning  | IO port buffering is incomplete                     | 7          |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -44,6 +45,41 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+RPBF-3#1 Warning
+IO port buffering is incomplete  
+Device port A_TO_G[0] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#2 Warning
+IO port buffering is incomplete  
+Device port A_TO_G[1] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#3 Warning
+IO port buffering is incomplete  
+Device port A_TO_G[2] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#4 Warning
+IO port buffering is incomplete  
+Device port A_TO_G[3] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#5 Warning
+IO port buffering is incomplete  
+Device port A_TO_G[4] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#6 Warning
+IO port buffering is incomplete  
+Device port A_TO_G[5] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#7 Warning
+IO port buffering is incomplete  
+Device port A_TO_G[6] expects both input and output buffering but the buffers are incomplete.
 Related violations: <none>
 
 

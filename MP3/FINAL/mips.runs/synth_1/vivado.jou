@@ -2,11 +2,11 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Mon May 13 13:48:36 2019
-# Process ID: 7988
-# Current directory: C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.runs/synth_1
+# Start of session at: Mon May 13 14:57:20 2019
+# Process ID: 6740
+# Current directory: C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/synth_1
 # Command line: vivado.exe -log computer_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source computer_top.tcl
-# Log file: C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.runs/synth_1/computer_top.vds
-# Journal file: C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.runs/synth_1\vivado.jou
+# Log file: C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/synth_1/computer_top.vds
+# Journal file: C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source computer_top.tcl -notrace

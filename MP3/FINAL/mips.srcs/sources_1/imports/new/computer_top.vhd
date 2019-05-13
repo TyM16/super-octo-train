@@ -9,7 +9,7 @@ use IEEE.STD_LOGIC_UNSIGNED.all;
 entity computer_top is -- top-level design for testing
   port( 
        CLKM : in STD_LOGIC;
-       A_TO_G : out STD_LOGIC_VECTOR(6 downto 0);
+       A_TO_G : inout STD_LOGIC_VECTOR(6 downto 0);
        AN : out STD_LOGIC_VECTOR(3 downto 0);
        DP : out STD_LOGIC;
        LED : out  STD_LOGIC_VECTOR(6 downto 0);
@@ -18,8 +18,12 @@ entity computer_top is -- top-level design for testing
        SW : in STD_LOGIC_VECTOR( 2 downto 0); -- Switches 2, 1, and 0
        SS : out STD_LOGIC;    -- Slave Select, Pin 1, Port JA
        MOSI : out STD_LOGIC;  -- Master Out Slave In, Pin 2, Port JA
-       SCLK : out STD_LOGIC  -- Serial Clock, Pin 4, Port JA
-	   );
+       SCLK : out STD_LOGIC;  -- Serial Clock, Pin 4, Port JA
+       hsync, vsync: out  std_logic;
+       red: out std_logic_vector(3 downto 0);
+       green: out std_logic_vector(3 downto 0);
+       blue: out std_logic_vector(3 downto 0) 
+  );
 end;
 
 
@@ -30,18 +34,15 @@ end;
 ---------------------------------------------------------
 
 architecture computer_top of computer_top is
-
---  component display_hex
---	port (
---		CLKM : in STD_LOGIC;
---        x : in STD_LOGIC_VECTOR(31 downto 0);
---        A_TO_G : out STD_LOGIC_VECTOR(6 downto 0);
---        AN : out STD_LOGIC_VECTOR(7 downto 0);
---        DP : out STD_LOGIC;
---        LED : out  STD_LOGIC_VECTOR(3 downto 0);
---        clk_div: out STD_LOGIC_VECTOR(28 downto 0)
---	 );
---  end component;
+    component bouncing_box
+    port(
+        clk, reset, BTNL, BTNR, BTNU, BTND: in std_logic;
+        hsync, vsync: out  std_logic;
+        red: out std_logic_vector(3 downto 0);
+        green: out std_logic_vector(3 downto 0);
+        blue: out std_logic_vector(3 downto 0) 
+    );
+    end component;
   
   component PmodJSTK_Demo
    port (
@@ -79,7 +80,8 @@ architecture computer_top of computer_top is
   signal display_bus: STD_LOGIC_VECTOR(31 downto 0); 
   
   signal res: STD_LOGIC;
-         
+  
+  signal direction: STD_LOGIC_VECTOR(3 downto 0);       
   
   begin
       -- wire up slow clock 
@@ -87,8 +89,26 @@ architecture computer_top of computer_top is
       -- clk <= clk_div(0);  -- use this in simulation (fast clk)
            
 	  -- wire up the processor and memories
-	  mips1: mips_top port map( clk => clk, reset => reset, out_port_1 => display_bus );
+	  mips1: mips_top port map( clk => CLKM, reset => reset, out_port_1 => display_bus );
 	  
+	  direction <= A_TO_G(3 downto 0);
+	  
+	  --vga
+	  vga: bouncing_box port map(
+	       clk => CLKM,
+	       reset => reset,
+	       BTNL => direction(0),
+	       BTNR => direction(1),
+	       BTNU => direction(2),
+	       BTND => direction(3),
+           hsync => hsync,
+           vsync => vsync,
+           red => red,
+           green => green,
+           blue => blue 
+	  );
+	  
+	  --reset for joystick
 	  res <= not reset;
 	  
 	  -- joystick port map
