@@ -265,12 +265,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/memfile.dat">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/new/Synchronizer.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../VGA/mips.srcs/sources_1/imports/new/Synchronizer.vhd"/>
@@ -291,6 +285,12 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../VGA/mips.srcs/sources_1/imports/new/vga_sync.vhd"/>
           <Attr Name="ImportTime" Val="1557781243"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/memfile.dat">
+        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

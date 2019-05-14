@@ -96,7 +96,7 @@ architecture computer_top of computer_top is
 	  --vga
 	  vga: bouncing_box port map(
 	       clk => CLKM,
-	       reset => reset,
+	       reset => res,
 	       BTNL => direction(0),
 	       BTNR => direction(1),
 	       BTNU => direction(2),

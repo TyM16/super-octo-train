@@ -2,23 +2,18 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Tue May 14 10:30:53 2019
-# Process ID: 8084
+# Start of session at: Mon May 13 14:03:38 2019
+# Process ID: 12024
 # Current directory: C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8856 C:\Users\mgamlem19\Desktop\super-octo-train\MP3\FINAL\mips.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10888 C:\Users\mgamlem19\Desktop\super-octo-train\MP3\FINAL\mips.xpr
 # Log file: C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/vivado.log
 # Journal file: C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.xpr
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
+launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
-update_files -from_files C:/Users/mgamlem19/Desktop/memfile.dat -to_files C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/memfile.dat -filesets [get_filesets *]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_run impl_1
 open_hw
 connect_hw_server
 open_hw_target
@@ -30,23 +25,77 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property PROGRAM.FILE {C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-synth_design -rtl -name rtl_1
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+import_files -norecurse {C:/Users/mgamlem19/Desktop/super-octo-train/MP3/VGA/mips.srcs/sources_1/imports/new/Synchronizer.vhd C:/Users/mgamlem19/Desktop/super-octo-train/MP3/VGA/mips.srcs/sources_1/imports/new/bouncing_box.vhd C:/Users/mgamlem19/Desktop/super-octo-train/MP3/VGA/mips.srcs/sources_1/imports/new/vga_sync.vhd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 close_hw
 synth_design -rtl -name rtl_1
-export_ip_user_files -of_objects  [get_files C:/Users/mgamlem19/Desktop/memfile.dat] -no_script -reset -force -quiet
-remove_files  C:/Users/mgamlem19/Desktop/memfile.dat
-remove_files  C:/Users/mgamlem19/Desktop/memfile.dat
-import_files -force -norecurse C:/Users/mgamlem19/Desktop/memfile.dat
-open_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+refresh_design
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+refresh_design
 close_design
 synth_design -rtl -name rtl_1
-update_files -from_files C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/memfile.dat -to_files C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/Desktop/memfile.dat -filesets [get_filesets *]
-export_ip_user_files -of_objects  [get_files C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/Desktop/memfile.dat] -no_script -reset -force -quiet
-remove_files  C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/Desktop/memfile.dat
-add_files -norecurse C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/memfile.dat
-synth_design -rtl -name rtl_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 8
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
 open_hw
 connect_hw_server
@@ -60,66 +109,3 @@ set_property PROGRAM.FILE {C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 close_hw
-refresh_design
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-close_hw
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-refresh_design
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-current_design rtl_1

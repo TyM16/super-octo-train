@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Mon May 13 14:58:37 2019
-| Host         : LAB-SCI-214-06 running 64-bit major release  (build 9200)
+| Date         : Tue May 14 11:07:44 2019
+| Host         : LAB-SCI-214-04 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file computer_top_control_sets_placed.rpt
 | Design       : computer_top
 | Device       : xc7a100t
@@ -23,7 +23,7 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    31 |
+| Number of unique control sets                            |    30 |
 | Unused register locations in slices containing registers |    68 |
 +----------------------------------------------------------+-------+
 
@@ -35,7 +35,7 @@ Table of Contents
 | Fanout | Control Sets |
 +--------+--------------+
 |      2 |            2 |
-|      4 |            3 |
+|      4 |            2 |
 |      8 |            5 |
 |     10 |            1 |
 |     12 |            1 |
@@ -49,9 +49,9 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             154 |           24 |
+| No           | No                    | No                     |             154 |           25 |
 | No           | No                    | Yes                    |               8 |            3 |
-| No           | Yes                   | No                     |             400 |           65 |
+| No           | Yes                   | No                     |             400 |           57 |
 | Yes          | No                    | No                     |              10 |            2 |
 | Yes          | No                    | Yes                    |              40 |            6 |
 | Yes          | Yes                   | No                     |             248 |           39 |
@@ -61,40 +61,39 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------------------------------------+--------------------------------------------------------------+-------------------------------------------+------------------+----------------+
-|                Clock Signal                |                         Enable Signal                        |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
-+--------------------------------------------+--------------------------------------------------------------+-------------------------------------------+------------------+----------------+
-|  video_on                                  |                                                              |                                           |                1 |              2 |
-| ~PmodJSTK_Int/iSCLK                        | joystick/PmodJSTK_Int/SPI_Ctrl/SS_i_1_n_0                    | joystick/PmodJSTK_Int/SPI_Ctrl/SR[0]      |                1 |              2 |
-|  CLKM_IBUF_BUFG                            |                                                              | reset_IBUF                                |                1 |              4 |
-|  joystick/DispCtrl/DCLK_reg_n_0            |                                                              |                                           |                1 |              4 |
-|  vga/vga_sync_unit/clk_divider_reg_n_0_[0] |                                                              | reset_IBUF                                |                2 |              4 |
-|  CLKM_IBUF_BUFG                            | joystick/DispCtrl/BtoBCD/tmpSR[23]_i_1_n_0                   | joystick/PmodJSTK_Int/SPI_Ctrl/SR[0]      |                2 |              8 |
-|  CLKM_IBUF_BUFG                            | joystick/DispCtrl/BtoBCD/tmpSR[19]_i_1_n_0                   | joystick/PmodJSTK_Int/SPI_Ctrl/SR[0]      |                2 |              8 |
-|  CLKM_IBUF_BUFG                            | joystick/DispCtrl/BtoBCD/tmpSR[15]_i_1_n_0                   | joystick/PmodJSTK_Int/SPI_Ctrl/SR[0]      |                2 |              8 |
-|  CLKM_IBUF_BUFG                            | joystick/DispCtrl/BtoBCD/tmpSR[27]_i_1_n_0                   | joystick/PmodJSTK_Int/SPI_Ctrl/SR[0]      |                1 |              8 |
-|  vga/vga_sync_unit/h_count_reg_reg[0]_0[0] |                                                              | vga/vga_sync_unit/blue_reg                |                2 |              8 |
-|  CLKM_IBUF_BUFG                            | joystick/DispCtrl/BtoBCD/shiftCount[4]_i_1_n_0               |                                           |                2 |             10 |
-|  CLKM_IBUF_BUFG                            |                                                              | vga/dir_x1                                |                2 |             12 |
-|  CLKM_IBUF_BUFG                            |                                                              | vga/dir_y1                                |                2 |             16 |
-|  PmodJSTK_Int/iSCLK                        | joystick/PmodJSTK_Int/SPI_Int/rSR                            | joystick/PmodJSTK_Int/SPI_Ctrl/SR[0]      |                3 |             16 |
-| ~PmodJSTK_Int/iSCLK                        | joystick/PmodJSTK_Int/SPI_Int/wSR_0                          | joystick/PmodJSTK_Int/SPI_Ctrl/SR[0]      |                2 |             16 |
-|  vga/vga_sync_unit/h_count_reg_reg[0]_0[0] |                                                              | vga/vga_sync_unit/red_reg_reg[3]          |                4 |             16 |
-|  CLKM_IBUF_BUFG                            |                                                              |                                           |                4 |             20 |
-|  vga/vga_sync_unit/clk_divider_reg_n_0_[0] | vga/vga_sync_unit/v_count_reg0                               | reset_IBUF                                |                3 |             20 |
-|  vga/vga_sync_unit/clk_divider_reg_n_0_[0] | vga/vga_sync_unit/h_count_reg_reg[0]_0[0]                    | reset_IBUF                                |                3 |             20 |
-|  CLKM_IBUF_BUFG                            | joystick/DispCtrl/BtoBCD/tmpSR[11]_i_1_n_0                   | joystick/PmodJSTK_Int/SPI_Ctrl/SR[0]      |                5 |             24 |
-|  CLKM_IBUF_BUFG                            |                                                              | joystick/DispCtrl/clkCount[15]_i_1__0_n_0 |                4 |             30 |
-|  joystick/DispCtrl/DCLK_reg_n_0            |                                                              | joystick/PmodJSTK_Int/SPI_Ctrl/SR[0]      |                6 |             30 |
-|  CLKM_IBUF_BUFG                            | joystick/DispCtrl/BtoBCD/BCDOUT[15]_i_1_n_0                  | joystick/PmodJSTK_Int/SPI_Ctrl/SR[0]      |                5 |             32 |
-| ~PmodJSTK_Int/iSCLK                        |                                                              | joystick/PmodJSTK_Int/SPI_Ctrl/SR[0]      |               10 |             42 |
-| ~PmodJSTK_Int/iSCLK                        | joystick/PmodJSTK_Int/SPI_Ctrl/FSM_onehot_pState_reg_n_0_[4] | joystick/PmodJSTK_Int/SPI_Ctrl/SR[0]      |                4 |             46 |
-|  CLKM_IBUF_BUFG                            |                                                              | vga/y[31]_i_1_n_0                         |                8 |             50 |
-|  CLKM_IBUF_BUFG                            |                                                              | vga/x[31]_i_1_n_0                         |                8 |             54 |
-|  video_on                                  |                                                              | vga/clear                                 |                8 |             64 |
-|  CLKM_IBUF_BUFG                            |                                                              | joystick/PmodJSTK_Int/SPI_Ctrl/SR[0]      |               11 |             78 |
-| ~PmodJSTK_Int/iSCLK                        | joystick/PmodJSTK_Int/SPI_Ctrl/tmpSR[39]_i_1_n_0             | joystick/PmodJSTK_Int/SPI_Ctrl/SR[0]      |               12 |             80 |
-|  update_pos                                |                                                              |                                           |               18 |            128 |
-+--------------------------------------------+--------------------------------------------------------------+-------------------------------------------+------------------+----------------+
++--------------------------------------------+--------------------------------------------------------------+----------------------------------------------+------------------+----------------+
+|                Clock Signal                |                         Enable Signal                        |               Set/Reset Signal               | Slice Load Count | Bel Load Count |
++--------------------------------------------+--------------------------------------------------------------+----------------------------------------------+------------------+----------------+
+| ~PmodJSTK_Int/iSCLK                        | joystick/PmodJSTK_Int/SPI_Ctrl/SS_i_1_n_0                    | joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[0]_0 |                1 |              2 |
+|  video_on                                  |                                                              |                                              |                1 |              2 |
+|  joystick/DispCtrl/DCLK_reg_n_0            |                                                              |                                              |                1 |              4 |
+|  vga/vga_sync_unit/clk_divider_reg_n_0_[0] |                                                              | joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[0]_0 |                2 |              4 |
+|  CLKM_IBUF_BUFG                            | joystick/DispCtrl/BtoBCD/tmpSR[27]_i_1_n_0                   | joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[0]_0 |                2 |              8 |
+|  CLKM_IBUF_BUFG                            | joystick/DispCtrl/BtoBCD/tmpSR[23]_i_1_n_0                   | joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[0]_0 |                2 |              8 |
+|  CLKM_IBUF_BUFG                            | joystick/DispCtrl/BtoBCD/tmpSR[19]_i_1_n_0                   | joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[0]_0 |                1 |              8 |
+|  CLKM_IBUF_BUFG                            | joystick/DispCtrl/BtoBCD/tmpSR[15]_i_1_n_0                   | joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[0]_0 |                2 |              8 |
+|  vga/vga_sync_unit/h_count_reg_reg[0]_0[0] |                                                              | vga/vga_sync_unit/blue_reg                   |                2 |              8 |
+|  CLKM_IBUF_BUFG                            | joystick/DispCtrl/BtoBCD/shiftCount[4]_i_1_n_0               |                                              |                2 |             10 |
+|  CLKM_IBUF_BUFG                            |                                                              | vga/dir_x1                                   |                1 |             12 |
+|  CLKM_IBUF_BUFG                            |                                                              | vga/dir_y1                                   |                2 |             16 |
+|  PmodJSTK_Int/iSCLK                        | joystick/PmodJSTK_Int/SPI_Int/rSR                            | joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[0]_0 |                5 |             16 |
+| ~PmodJSTK_Int/iSCLK                        | joystick/PmodJSTK_Int/SPI_Int/wSR_0                          | joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[0]_0 |                2 |             16 |
+|  vga/vga_sync_unit/h_count_reg_reg[0]_0[0] |                                                              | vga/vga_sync_unit/red_reg_reg[3]             |                4 |             16 |
+|  CLKM_IBUF_BUFG                            |                                                              |                                              |                5 |             20 |
+|  vga/vga_sync_unit/clk_divider_reg_n_0_[0] | vga/vga_sync_unit/v_count_reg0                               | joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[0]_0 |                3 |             20 |
+|  vga/vga_sync_unit/clk_divider_reg_n_0_[0] | vga/vga_sync_unit/h_count_reg_reg[0]_0[0]                    | joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[0]_0 |                3 |             20 |
+|  CLKM_IBUF_BUFG                            | joystick/DispCtrl/BtoBCD/tmpSR[11]_i_1_n_0                   | joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[0]_0 |                4 |             24 |
+|  CLKM_IBUF_BUFG                            |                                                              | joystick/DispCtrl/clkCount[15]_i_1__0_n_0    |                4 |             30 |
+|  joystick/DispCtrl/DCLK_reg_n_0            |                                                              | joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[0]_0 |                5 |             30 |
+|  CLKM_IBUF_BUFG                            | joystick/DispCtrl/BtoBCD/BCDOUT[15]_i_1_n_0                  | joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[0]_0 |                3 |             32 |
+| ~PmodJSTK_Int/iSCLK                        |                                                              | joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[0]_0 |                8 |             42 |
+| ~PmodJSTK_Int/iSCLK                        | joystick/PmodJSTK_Int/SPI_Ctrl/FSM_onehot_pState_reg_n_0_[4] | joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[0]_0 |                6 |             46 |
+|  CLKM_IBUF_BUFG                            |                                                              | vga/y[31]_i_1_n_0                            |                5 |             50 |
+|  CLKM_IBUF_BUFG                            |                                                              | vga/x[31]_i_1_n_0                            |                9 |             54 |
+|  video_on                                  |                                                              | vga/clear                                    |                8 |             64 |
+| ~PmodJSTK_Int/iSCLK                        | joystick/PmodJSTK_Int/SPI_Ctrl/tmpSR[39]_i_1_n_0             | joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[0]_0 |               11 |             80 |
+|  CLKM_IBUF_BUFG                            |                                                              | joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[0]_0 |               10 |             82 |
+|  update_pos                                |                                                              |                                              |               18 |            128 |
++--------------------------------------------+--------------------------------------------------------------+----------------------------------------------+------------------+----------------+
 
 
