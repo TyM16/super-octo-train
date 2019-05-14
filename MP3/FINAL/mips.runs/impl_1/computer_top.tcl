@@ -60,13 +60,18 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param synth.incrementalSynthesisCache C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/.Xil/Vivado-8084-LAB-SCI-214-04/incrSyn
+  set_param xicom.use_bs_reader 1
   open_checkpoint computer_top_routed.dcp
-  set_property webtalk.parent_dir C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.cache/wt [current_project]
   catch { write_mem_info -force computer_top.mmi }
   write_bitstream -force computer_top.bit 
   catch {write_debug_probes -quiet -force computer_top}

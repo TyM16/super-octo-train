@@ -1,0 +1,591 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Mon May 13 10:18:47 2019
+# Process ID: 11920
+# Current directory: C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.runs/synth_1
+# Command line: vivado.exe -log computer_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source computer_top.tcl
+# Log file: C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.runs/synth_1/computer_top.vds
+# Journal file: C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source computer_top.tcl -notrace
+Command: synth_design -top computer_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10884 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 356.484 ; gain = 98.418
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'computer_top' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+INFO: [Synth 8-3491] module 'mips_top' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/computer_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mips_top' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mips' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mips' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+WARNING: [Synth 8-5640] Port 'result' is missing in component declaration [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:30]
+INFO: [Synth 8-3491] module 'controller' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+INFO: [Synth 8-3491] module 'maindec' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:5' bound to instance 'md' of component 'maindec' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_controller.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'maindec' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:16]
+WARNING: [Synth 8-3848] Net memtoreg in module/entity maindec does not have driver. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:7]
+WARNING: [Synth 8-3848] Net alusrc in module/entity maindec does not have driver. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:8]
+WARNING: [Synth 8-3848] Net regwrite in module/entity maindec does not have driver. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:16]
+WARNING: [Synth 8-3848] Net zero in module/entity controller does not have driver. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_controller.vhd:7]
+INFO: [Synth 8-256] done synthesizing module 'controller' (2#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'datapath' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'flopr' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'flopr' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (3#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'adder' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (4#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'sl2' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:7' bound to instance 'immsh' of component 'sl2' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'sl2' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sl2' (5#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:93]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (6#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcmux' of component 'mux2' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:95]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'regfile' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'regfile' (7#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+	Parameter width bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'wrmux' of component 'mux2' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized2' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter width bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized2' (7#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:109]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'signext' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'signext' (8#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:116]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:14' bound to instance 'mainalu' of component 'alu' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:24]
+	Parameter width bound to: 32 - type: integer 
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/left_shifter.vhd:20]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (9#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/left_shifter.vhd:20]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'ShiftRight' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/right_shifter.vhd:20]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ShiftRight' (10#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/right_shifter.vhd:20]
+WARNING: [Synth 8-3848] Net slt in module/entity ALU does not have driver. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (11#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (12#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'mips' (13#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'imem' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'imem' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'imem' (14#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'dmem' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'dmem' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:18]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dmem' (15#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'mips_top' (16#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+INFO: [Synth 8-3491] module 'display_hex' declared at 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/display_hex.vhd:5' bound to instance 'display' of component 'display_hex' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/computer_top.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'display_hex' [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+WARNING: [Synth 8-614] signal 'x' is read in the process but is not in the sensitivity list [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/display_hex.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'display_hex' (17#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/display_hex.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'computer_top' (18#1) [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/computer_top.vhd:24]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[31]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[30]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[29]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[28]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[27]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[26]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[25]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[24]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[23]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[22]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[21]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[20]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[19]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[18]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[17]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[16]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[15]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[14]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[13]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[12]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[11]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[10]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[9]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[8]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[1]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[0]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port regdst[3]
+WARNING: [Synth 8-3331] design datapath has unconnected port regdst[2]
+WARNING: [Synth 8-3331] design datapath has unconnected port regdst[1]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+WARNING: [Synth 8-3331] design maindec has unconnected port memtoreg
+WARNING: [Synth 8-3331] design maindec has unconnected port alusrc
+WARNING: [Synth 8-3331] design maindec has unconnected port regwrite
+WARNING: [Synth 8-3331] design controller has unconnected port zero
+WARNING: [Synth 8-3331] design controller has unconnected port result[31]
+WARNING: [Synth 8-3331] design controller has unconnected port result[30]
+WARNING: [Synth 8-3331] design controller has unconnected port result[29]
+WARNING: [Synth 8-3331] design controller has unconnected port result[28]
+WARNING: [Synth 8-3331] design controller has unconnected port result[27]
+WARNING: [Synth 8-3331] design controller has unconnected port result[26]
+WARNING: [Synth 8-3331] design controller has unconnected port result[25]
+WARNING: [Synth 8-3331] design controller has unconnected port result[24]
+WARNING: [Synth 8-3331] design controller has unconnected port result[23]
+WARNING: [Synth 8-3331] design controller has unconnected port result[22]
+WARNING: [Synth 8-3331] design controller has unconnected port result[21]
+WARNING: [Synth 8-3331] design controller has unconnected port result[20]
+WARNING: [Synth 8-3331] design controller has unconnected port result[19]
+WARNING: [Synth 8-3331] design controller has unconnected port result[18]
+WARNING: [Synth 8-3331] design controller has unconnected port result[17]
+WARNING: [Synth 8-3331] design controller has unconnected port result[16]
+WARNING: [Synth 8-3331] design controller has unconnected port result[15]
+WARNING: [Synth 8-3331] design controller has unconnected port result[14]
+WARNING: [Synth 8-3331] design controller has unconnected port result[13]
+WARNING: [Synth 8-3331] design controller has unconnected port result[12]
+WARNING: [Synth 8-3331] design controller has unconnected port result[11]
+WARNING: [Synth 8-3331] design controller has unconnected port result[10]
+WARNING: [Synth 8-3331] design controller has unconnected port result[9]
+WARNING: [Synth 8-3331] design controller has unconnected port result[8]
+WARNING: [Synth 8-3331] design controller has unconnected port result[7]
+WARNING: [Synth 8-3331] design controller has unconnected port result[6]
+WARNING: [Synth 8-3331] design controller has unconnected port result[5]
+WARNING: [Synth 8-3331] design controller has unconnected port result[4]
+WARNING: [Synth 8-3331] design controller has unconnected port result[3]
+WARNING: [Synth 8-3331] design controller has unconnected port result[2]
+WARNING: [Synth 8-3331] design controller has unconnected port result[1]
+WARNING: [Synth 8-3331] design controller has unconnected port result[0]
+WARNING: [Synth 8-3331] design controller has unconnected port funct[5]
+WARNING: [Synth 8-3331] design controller has unconnected port funct[4]
+WARNING: [Synth 8-3331] design controller has unconnected port funct[3]
+WARNING: [Synth 8-3331] design controller has unconnected port funct[2]
+WARNING: [Synth 8-3331] design controller has unconnected port funct[1]
+WARNING: [Synth 8-3331] design controller has unconnected port funct[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 413.008 ; gain = 154.941
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 413.008 ; gain = 154.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 413.008 ; gain = 154.941
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNR'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTND'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_R[0]'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_R[1]'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_R[2]'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_R[3]'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_G[0]'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:161]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_G[1]'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:162]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:162]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_G[2]'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_G[3]'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:164]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_B[0]'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_B[1]'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_B[2]'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_B[3]'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_HS'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_VS'. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/computer_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/computer_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 745.309 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 745.309 ; gain = 487.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 745.309 ; gain = 487.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 745.309 ; gain = 487.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:76]
+INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 745.309 ; gain = 487.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	  16 Input     32 Bit        Muxes := 2     
+	  65 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module flopr 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module mux2__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module signext 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  16 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  65 Input     32 Bit        Muxes := 1     
+Module display_hex 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design computer_top has port DP driven by constant 1
+WARNING: [Synth 8-3331] design datapath has unconnected port regdst[3]
+WARNING: [Synth 8-3331] design datapath has unconnected port regdst[2]
+WARNING: [Synth 8-3331] design datapath has unconnected port regdst[1]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+warning: Removed RAM mips1/dmem1/mem_reg due to inactive write enable
+WARNING: [Synth 8-6014] Unused sequential element mips1/dmem1/mem_reg was removed. 
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[31]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[30]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[29]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[28]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[27]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[26]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[25]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[24]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[23]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[22]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[21]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[20]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[19]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[18]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[17]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[16]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[15]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[14]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[13]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[12]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[11]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[10]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[9]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[8]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[7]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[6]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[5]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[4]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[3]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[2]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[1]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[0]) is unused and will be removed from module computer_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 745.309 ; gain = 487.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 752.164 ; gain = 494.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 752.164 ; gain = 494.098
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 761.691 ; gain = 503.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 761.691 ; gain = 503.625
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 761.691 ; gain = 503.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 761.691 ; gain = 503.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 761.691 ; gain = 503.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 761.691 ; gain = 503.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 761.691 ; gain = 503.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |LUT1   |     1|
+|4     |LUT4   |     8|
+|5     |FDRE   |    19|
+|6     |IBUF   |     1|
+|7     |OBUF   |    20|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+------------+------+
+|      |Instance  |Module      |Cells |
++------+----------+------------+------+
+|1     |top       |            |    55|
+|2     |  display |display_hex |    33|
++------+----------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 761.691 ; gain = 503.625
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 761.691 ; gain = 171.324
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 761.691 ; gain = 503.625
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 147 Warnings, 18 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 770.906 ; gain = 525.656
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/tseymour18/Desktop/CS401 Assembler/super-octo-train/MP3/FINAL/mips.runs/synth_1/computer_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file computer_top_utilization_synth.rpt -pb computer_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 770.906 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon May 13 10:19:17 2019...

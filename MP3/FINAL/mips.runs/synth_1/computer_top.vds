@@ -2,12 +2,12 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Mon May 13 13:48:36 2019
-# Process ID: 7988
-# Current directory: C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.runs/synth_1
+# Start of session at: Tue May 14 11:06:14 2019
+# Process ID: 6724
+# Current directory: C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/synth_1
 # Command line: vivado.exe -log computer_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source computer_top.tcl
-# Log file: C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.runs/synth_1/computer_top.vds
-# Journal file: C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.runs/synth_1\vivado.jou
+# Log file: C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/synth_1/computer_top.vds
+# Journal file: C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source computer_top.tcl -notrace
 Command: synth_design -top computer_top -part xc7a100tcsg324-1
@@ -15,146 +15,158 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4464 
+INFO: Helper process launched with PID 14076 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 356.793 ; gain = 99.609
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 357.051 ; gain = 99.570
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'computer_top' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/computer_top.vhd:32]
-INFO: [Synth 8-3491] module 'mips_top' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/computer_top.vhd:90]
-INFO: [Synth 8-638] synthesizing module 'mips_top' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'computer_top' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/computer_top.vhd:36]
+INFO: [Synth 8-3491] module 'mips_top' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:17' bound to instance 'mips1' of component 'mips_top' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/computer_top.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'mips_top' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mips' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:65]
-INFO: [Synth 8-638] synthesizing module 'mips' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:29]
+INFO: [Synth 8-3491] module 'mips' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:14' bound to instance 'mips1' of component 'mips' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mips' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:29]
 	Parameter width bound to: 32 - type: integer 
-WARNING: [Synth 8-5640] Port 'result' is missing in component declaration [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:30]
-INFO: [Synth 8-3491] module 'controller' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:62]
-INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
-INFO: [Synth 8-3491] module 'maindec' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:5' bound to instance 'md' of component 'maindec' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_controller.vhd:39]
-INFO: [Synth 8-638] synthesizing module 'maindec' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:16]
-WARNING: [Synth 8-3848] Net memtoreg in module/entity maindec does not have driver. [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:7]
-WARNING: [Synth 8-3848] Net alusrc in module/entity maindec does not have driver. [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:8]
-WARNING: [Synth 8-3848] Net regwrite in module/entity maindec does not have driver. [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:10]
-WARNING: [Synth 8-3848] Net jump in module/entity maindec does not have driver. [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:16]
-WARNING: [Synth 8-3848] Net zero in module/entity controller does not have driver. [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_controller.vhd:7]
-INFO: [Synth 8-256] done synthesizing module 'controller' (2#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+WARNING: [Synth 8-5640] Port 'result' is missing in component declaration [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:30]
+INFO: [Synth 8-3491] module 'controller' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_controller.vhd:5' bound to instance 'cont' of component 'controller' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
+INFO: [Synth 8-3491] module 'maindec' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:5' bound to instance 'md' of component 'maindec' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_controller.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'maindec' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:16]
+WARNING: [Synth 8-3848] Net memtoreg in module/entity maindec does not have driver. [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:7]
+WARNING: [Synth 8-3848] Net alusrc in module/entity maindec does not have driver. [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:8]
+WARNING: [Synth 8-3848] Net regwrite in module/entity maindec does not have driver. [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:10]
+WARNING: [Synth 8-3848] Net jump in module/entity maindec does not have driver. [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_decoder_main.vhd:16]
+WARNING: [Synth 8-3848] Net zero in module/entity controller does not have driver. [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_controller.vhd:7]
+INFO: [Synth 8-256] done synthesizing module 'controller' (2#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_controller.vhd:17]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'datapath' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:68]
-INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+INFO: [Synth 8-3491] module 'datapath' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:6' bound to instance 'dp' of component 'datapath' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
 	Parameter width bound to: 32 - type: integer 
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'flopr' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:90]
-INFO: [Synth 8-638] synthesizing module 'flopr' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+INFO: [Synth 8-3491] module 'flopr' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:5' bound to instance 'pcreg' of component 'flopr' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'flopr' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'flopr' (3#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'flopr' (3#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_flip_flop_register.vhd:12]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:91]
-INFO: [Synth 8-638] synthesizing module 'adder' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'adder' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'adder' (4#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'adder' (4#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_adder.vhd:13]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'sl2' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:7' bound to instance 'immsh' of component 'sl2' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:92]
-INFO: [Synth 8-638] synthesizing module 'sl2' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
+INFO: [Synth 8-3491] module 'sl2' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:7' bound to instance 'immsh' of component 'sl2' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'sl2' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'sl2' (5#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'sl2' (5#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_shift_left_by_2.vhd:13]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:93]
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:93]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:94]
-INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mux2' (6#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux2' (6#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcmux' of component 'mux2' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:95]
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'pcmux' of component 'mux2' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:95]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'regfile' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:98]
-INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+INFO: [Synth 8-3491] module 'regfile' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_register_file.vhd:11' bound to instance 'rf' of component 'regfile' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'regfile' (7#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (7#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_register_file.vhd:21]
 	Parameter width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'wrmux' of component 'mux2' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:105]
-INFO: [Synth 8-638] synthesizing module 'mux2__parameterized2' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'wrmux' of component 'mux2' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized2' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
 	Parameter width bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized2' (7#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized2' (7#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:11]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:109]
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'resmux' of component 'mux2' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:109]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'signext' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:113]
-INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+INFO: [Synth 8-3491] module 'signext' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:5' bound to instance 'se' of component 'signext' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'signext' (8#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'signext' (8#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_sign_extender.vhd:11]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:116]
+INFO: [Synth 8-3491] module 'mux2' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_multiplexer_2_input.vhd:4' bound to instance 'srcbmux' of component 'mux2' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:116]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:14' bound to instance 'mainalu' of component 'alu' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:120]
-INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:24]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:14' bound to instance 'mainalu' of component 'alu' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:24]
 	Parameter width bound to: 32 - type: integer 
 	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:55]
-INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/left_shifter.vhd:20]
+INFO: [Synth 8-3491] module 'ShiftLeft' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/left_shifter.vhd:13' bound to instance 'shifter_l' of component 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'ShiftLeft' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/left_shifter.vhd:20]
 	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (9#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/left_shifter.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ShiftLeft' (9#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/left_shifter.vhd:20]
 	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:58]
-INFO: [Synth 8-638] synthesizing module 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/right_shifter.vhd:20]
+INFO: [Synth 8-3491] module 'ShiftRight' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/right_shifter.vhd:13' bound to instance 'shifter_r' of component 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'ShiftRight' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/right_shifter.vhd:20]
 	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'ShiftRight' (10#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/right_shifter.vhd:20]
-WARNING: [Synth 8-3848] Net slt in module/entity ALU does not have driver. [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'ALU' (11#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'datapath' (12#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'mips' (13#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'ShiftRight' (10#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/right_shifter.vhd:20]
+WARNING: [Synth 8-3848] Net slt in module/entity ALU does not have driver. [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (11#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (12#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_datapath.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'mips' (13#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips.vhd:29]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'imem' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:68]
-INFO: [Synth 8-638] synthesizing module 'imem' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+INFO: [Synth 8-3491] module 'imem' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'imem' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'imem' (14#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'imem' (14#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_instructions.vhd:16]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'dmem' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:69]
-INFO: [Synth 8-638] synthesizing module 'dmem' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:18]
+INFO: [Synth 8-3491] module 'dmem' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'dmem' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:18]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'dmem' (15#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'mips_top' (16#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
-INFO: [Synth 8-3491] module 'PmodJSTK_Demo' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/PmodJSTK_Demo.v:38' bound to instance 'joystick' of component 'PmodJSTK_Demo' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/computer_top.vhd:95]
-INFO: [Synth 8-6157] synthesizing module 'PmodJSTK_Demo' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/PmodJSTK_Demo.v:38]
-INFO: [Synth 8-6157] synthesizing module 'PmodJSTK' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/PmodJSTK.v:24]
-INFO: [Synth 8-6157] synthesizing module 'spiCtrl' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/spiCtrl.v:27]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (15#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_mem_data.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'mips_top' (16#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/mips_top.vhd:29]
+INFO: [Synth 8-3491] module 'bouncing_box' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/bouncing_box.vhd:5' bound to instance 'vga' of component 'bouncing_box' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/computer_top.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'bouncing_box' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/bouncing_box.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/vga_sync.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (17#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/vga_sync.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'Synchronizer' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/Synchronizer.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Synchronizer' (18#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/Synchronizer.vhd:15]
+WARNING: [Synth 8-614] signal 'box_xl' is read in the process but is not in the sensitivity list [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/bouncing_box.vhd:120]
+WARNING: [Synth 8-614] signal 'box_xr' is read in the process but is not in the sensitivity list [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/bouncing_box.vhd:120]
+WARNING: [Synth 8-614] signal 'box_yt' is read in the process but is not in the sensitivity list [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/bouncing_box.vhd:120]
+WARNING: [Synth 8-614] signal 'box_yb' is read in the process but is not in the sensitivity list [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/bouncing_box.vhd:120]
+INFO: [Synth 8-4471] merging register 'green_reg_reg[3:0]' into 'red_reg_reg[3:0]' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/bouncing_box.vhd:142]
+WARNING: [Synth 8-6014] Unused sequential element green_reg_reg was removed.  [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/bouncing_box.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'bouncing_box' (19#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/bouncing_box.vhd:15]
+INFO: [Synth 8-3491] module 'PmodJSTK_Demo' declared at 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/PmodJSTK_Demo.v:38' bound to instance 'joystick' of component 'PmodJSTK_Demo' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/computer_top.vhd:115]
+INFO: [Synth 8-6157] synthesizing module 'PmodJSTK_Demo' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/PmodJSTK_Demo.v:38]
+INFO: [Synth 8-6157] synthesizing module 'PmodJSTK' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/PmodJSTK.v:24]
+INFO: [Synth 8-6157] synthesizing module 'spiCtrl' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/spiCtrl.v:27]
 	Parameter Idle bound to: 3'b000 
 	Parameter Init bound to: 3'b001 
 	Parameter Wait bound to: 3'b010 
 	Parameter Check bound to: 3'b011 
 	Parameter Done bound to: 3'b100 
 	Parameter byteEndVal bound to: 3'b101 
-INFO: [Synth 8-6155] done synthesizing module 'spiCtrl' (17#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/spiCtrl.v:27]
-INFO: [Synth 8-6157] synthesizing module 'spiMode0' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/SPImode0.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'spiCtrl' (20#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/spiCtrl.v:27]
+INFO: [Synth 8-6157] synthesizing module 'spiMode0' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/SPImode0.v:37]
 	Parameter Idle bound to: 2'b00 
 	Parameter Init bound to: 2'b01 
 	Parameter RxTx bound to: 2'b10 
 	Parameter Done bound to: 2'b11 
-INFO: [Synth 8-226] default block is never used [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/SPImode0.v:184]
-INFO: [Synth 8-6155] done synthesizing module 'spiMode0' (18#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/SPImode0.v:37]
-INFO: [Synth 8-6157] synthesizing module 'ClkDiv_66_67kHz' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/ClkDiv_66_67kHz.v:20]
+INFO: [Synth 8-226] default block is never used [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/SPImode0.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'spiMode0' (21#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/SPImode0.v:37]
+INFO: [Synth 8-6157] synthesizing module 'ClkDiv_66_67kHz' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/ClkDiv_66_67kHz.v:20]
 	Parameter cntEndVal bound to: 10'b1011101110 
-INFO: [Synth 8-6155] done synthesizing module 'ClkDiv_66_67kHz' (19#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/ClkDiv_66_67kHz.v:20]
-INFO: [Synth 8-6155] done synthesizing module 'PmodJSTK' (20#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/PmodJSTK.v:24]
-INFO: [Synth 8-6157] synthesizing module 'ssdCtrl' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/ssdCtrl.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ClkDiv_66_67kHz' (22#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/ClkDiv_66_67kHz.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'PmodJSTK' (23#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/PmodJSTK.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ssdCtrl' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/ssdCtrl.v:28]
 	Parameter cntEndVal bound to: 16'b1100001101010000 
-INFO: [Synth 8-6157] synthesizing module 'Binary_To_BCD' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/Binary_To_BCD.v:30]
+INFO: [Synth 8-6157] synthesizing module 'Binary_To_BCD' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/Binary_To_BCD.v:30]
 	Parameter Idle bound to: 3'b000 
 	Parameter Init bound to: 3'b001 
 	Parameter Shift bound to: 3'b011 
 	Parameter Check bound to: 3'b010 
 	Parameter Done bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/Binary_To_BCD.v:84]
-INFO: [Synth 8-6155] done synthesizing module 'Binary_To_BCD' (21#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/Binary_To_BCD.v:30]
-INFO: [Synth 8-226] default block is never used [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/ssdCtrl.v:144]
-INFO: [Synth 8-6155] done synthesizing module 'ssdCtrl' (22#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/ssdCtrl.v:28]
-INFO: [Synth 8-6157] synthesizing module 'ClkDiv_5Hz' [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/ClkDiv_5Hz.v:20]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/Binary_To_BCD.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'Binary_To_BCD' (24#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/Binary_To_BCD.v:30]
+INFO: [Synth 8-226] default block is never used [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/ssdCtrl.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'ssdCtrl' (25#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/ssdCtrl.v:28]
+INFO: [Synth 8-6157] synthesizing module 'ClkDiv_5Hz' [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/ClkDiv_5Hz.v:20]
 	Parameter cntEndVal bound to: 24'b100110001001011010000000 
-INFO: [Synth 8-6155] done synthesizing module 'ClkDiv_5Hz' (23#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/ClkDiv_5Hz.v:20]
-INFO: [Synth 8-6155] done synthesizing module 'PmodJSTK_Demo' (24#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/PmodJSTK_Demo.v:38]
-WARNING: [Synth 8-3848] Net DP in module/entity computer_top does not have driver. [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/computer_top.vhd:14]
-WARNING: [Synth 8-3848] Net clk_div in module/entity computer_top does not have driver. [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/computer_top.vhd:75]
-INFO: [Synth 8-256] done synthesizing module 'computer_top' (25#1) [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/computer_top.vhd:32]
+INFO: [Synth 8-6155] done synthesizing module 'ClkDiv_5Hz' (26#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/ClkDiv_5Hz.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'PmodJSTK_Demo' (27#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/PmodJSTK.srcs/PmodJSTK_Demo.v:38]
+WARNING: [Synth 8-3848] Net DP in module/entity computer_top does not have driver. [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/computer_top.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'computer_top' (28#1) [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/computer_top.vhd:36]
 WARNING: [Synth 8-3331] design dmem has unconnected port a[31]
 WARNING: [Synth 8-3331] design dmem has unconnected port a[30]
 WARNING: [Synth 8-3331] design dmem has unconnected port a[29]
@@ -241,7 +253,7 @@ WARNING: [Synth 8-3331] design computer_top has unconnected port LED[2]
 WARNING: [Synth 8-3331] design computer_top has unconnected port LED[1]
 WARNING: [Synth 8-3331] design computer_top has unconnected port LED[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 412.520 ; gain = 155.336
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 413.387 ; gain = 155.906
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -250,49 +262,54 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin mips1:clk to constant 0 [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/computer_top.vhd:90]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 412.520 ; gain = 155.336
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 413.387 ; gain = 155.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 412.520 ; gain = 155.336
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 413.387 ; gain = 155.906
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
-Finished Parsing XDC File [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/computer_top_propImpl.xdc].
+Parsing XDC File [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/computer_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/computer_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 761.031 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 765.324 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 761.031 ; gain = 503.848
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 765.324 ; gain = 507.844
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 761.031 ; gain = 503.848
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 765.324 ; gain = 507.844
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 761.031 ; gain = 503.848
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 765.324 ; gain = 507.844
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:76]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.srcs/sources_1/imports/new/ALU.vhd:76]
 INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "x" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "x" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "y" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "y" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'pState_reg' in module 'spiCtrl'
 INFO: [Synth 8-5544] ROM "SS" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "sndData" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -343,7 +360,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'pState_reg' using encoding
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'sequential' in module 'Binary_To_BCD'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 761.031 ; gain = 503.848
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 765.324 ; gain = 507.844
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -356,55 +373,58 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 7     
 	   3 Input     32 Bit       Adders := 1     
 	   2 Input     24 Bit       Adders := 1     
 	   2 Input     16 Bit       Adders := 1     
-	   2 Input     10 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
 	   2 Input      5 Bit       Adders := 2     
 	   2 Input      4 Bit       Adders := 4     
 	   2 Input      3 Bit       Adders := 1     
-	   2 Input      2 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
 	               40 Bit    Registers := 2     
-	               32 Bit    Registers := 1     
+	               32 Bit    Registers := 7     
 	               28 Bit    Registers := 1     
 	               24 Bit    Registers := 1     
 	               16 Bit    Registers := 2     
-	               10 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
 	                8 Bit    Registers := 3     
 	                7 Bit    Registers := 1     
 	                5 Bit    Registers := 2     
-	                4 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 7     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 19    
 +---Muxes : 
 	   5 Input     40 Bit        Muxes := 1     
 	   2 Input     32 Bit        Muxes := 8     
 	  16 Input     32 Bit        Muxes := 2     
 	  65 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 2     
 	   2 Input     28 Bit        Muxes := 1     
 	   5 Input     28 Bit        Muxes := 2     
 	   2 Input     24 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 1     
-	   2 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
 	   5 Input      8 Bit        Muxes := 1     
 	   4 Input      8 Bit        Muxes := 1     
 	   5 Input      5 Bit        Muxes := 2     
 	   2 Input      5 Bit        Muxes := 5     
 	   4 Input      5 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
 	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 5     
 	   5 Input      3 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 3     
 	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
 	   5 Input      1 Bit        Muxes := 8     
 	   4 Input      1 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -449,6 +469,37 @@ Module imem
 Detailed RTL Component Info : 
 +---Muxes : 
 	  65 Input     32 Bit        Muxes := 1     
+Module vga_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module Synchronizer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module bouncing_box 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
 Module spiCtrl 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -551,13 +602,11 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5546] ROM "joystick/PmodJSTK_Int/SerialClock/CLKOUT" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "joystick/DispCtrl/DCLK" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "joystick/genSndRec/CLKOUT" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-4767] Trying to implement RAM 'mips1/dmem1/mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
-Reason is one or more of the following :
-	1: No valid clock found for write to RAM. 
-RAM "mips1/dmem1/mem_reg" dissolved into registers
+INFO: [Synth 8-5546] ROM "vga_sync_unit/v_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vga_sync_unit/h_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PmodJSTK_Int/SerialClock/CLKOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DispCtrl/DCLK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "genSndRec/CLKOUT" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3331] design datapath has unconnected port regdst[3]
 WARNING: [Synth 8-3331] design datapath has unconnected port regdst[2]
 WARNING: [Synth 8-3331] design datapath has unconnected port regdst[1]
@@ -572,43 +621,110 @@ WARNING: [Synth 8-3331] design computer_top has unconnected port LED[3]
 WARNING: [Synth 8-3331] design computer_top has unconnected port LED[2]
 WARNING: [Synth 8-3331] design computer_top has unconnected port LED[1]
 WARNING: [Synth 8-3331] design computer_top has unconnected port LED[0]
-INFO: [Synth 8-3886] merging instance 'joystick/PmodJSTK_Int/SPI_Ctrl/sndData_reg[2]' (FDRE_1) to 'joystick/PmodJSTK_Int/SPI_Ctrl/sndData_reg[3]'
-INFO: [Synth 8-3886] merging instance 'joystick/PmodJSTK_Int/SPI_Ctrl/sndData_reg[3]' (FDRE_1) to 'joystick/PmodJSTK_Int/SPI_Ctrl/sndData_reg[4]'
-INFO: [Synth 8-3886] merging instance 'joystick/PmodJSTK_Int/SPI_Ctrl/sndData_reg[4]' (FDRE_1) to 'joystick/PmodJSTK_Int/SPI_Ctrl/sndData_reg[5]'
+INFO: [Synth 8-3886] merging instance 'joystick/PmodJSTK_Int/SPI_Ctrl/sndData_reg[2]' (FDRE_1) to 'joystick/PmodJSTK_Int/SPI_Ctrl/sndData_reg[6]'
+INFO: [Synth 8-3886] merging instance 'joystick/PmodJSTK_Int/SPI_Ctrl/sndData_reg[3]' (FDRE_1) to 'joystick/PmodJSTK_Int/SPI_Ctrl/sndData_reg[6]'
+INFO: [Synth 8-3886] merging instance 'joystick/PmodJSTK_Int/SPI_Ctrl/sndData_reg[4]' (FDRE_1) to 'joystick/PmodJSTK_Int/SPI_Ctrl/sndData_reg[6]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga/dir_y_reg[0] )
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[1]' (FDSE) to 'vga/dir_y_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[2]' (FDSE) to 'vga/dir_y_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga/dir_x_reg[0] )
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[1]' (FDSE) to 'vga/dir_x_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[2]' (FDSE) to 'vga/dir_x_reg[3]'
 INFO: [Synth 8-3886] merging instance 'joystick/PmodJSTK_Int/SPI_Ctrl/sndData_reg[5]' (FDRE_1) to 'joystick/PmodJSTK_Int/SPI_Ctrl/sndData_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[3]' (FDSE) to 'vga/dir_y_reg[4]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[4]' (FDSE) to 'vga/dir_y_reg[5]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[5]' (FDSE) to 'vga/dir_y_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[6]' (FDSE) to 'vga/dir_y_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[7]' (FDSE) to 'vga/dir_y_reg[8]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[8]' (FDSE) to 'vga/dir_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[9]' (FDSE) to 'vga/dir_y_reg[10]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[10]' (FDSE) to 'vga/dir_y_reg[11]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[11]' (FDSE) to 'vga/dir_y_reg[12]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[12]' (FDSE) to 'vga/dir_y_reg[13]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[13]' (FDSE) to 'vga/dir_y_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[14]' (FDSE) to 'vga/dir_y_reg[15]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[15]' (FDSE) to 'vga/dir_y_reg[16]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[16]' (FDSE) to 'vga/dir_y_reg[17]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[17]' (FDSE) to 'vga/dir_y_reg[18]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[18]' (FDSE) to 'vga/dir_y_reg[19]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[19]' (FDSE) to 'vga/dir_y_reg[20]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[20]' (FDSE) to 'vga/dir_y_reg[21]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[21]' (FDSE) to 'vga/dir_y_reg[22]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[22]' (FDSE) to 'vga/dir_y_reg[23]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[23]' (FDSE) to 'vga/dir_y_reg[24]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[24]' (FDSE) to 'vga/dir_y_reg[25]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[25]' (FDSE) to 'vga/dir_y_reg[26]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[26]' (FDSE) to 'vga/dir_y_reg[27]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[27]' (FDSE) to 'vga/dir_y_reg[28]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[28]' (FDSE) to 'vga/dir_y_reg[29]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[29]' (FDSE) to 'vga/dir_y_reg[30]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_y_reg[30]' (FDSE) to 'vga/dir_y_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[3]' (FDSE) to 'vga/dir_x_reg[4]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[4]' (FDSE) to 'vga/dir_x_reg[5]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[5]' (FDSE) to 'vga/dir_x_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[6]' (FDSE) to 'vga/dir_x_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[7]' (FDSE) to 'vga/dir_x_reg[8]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[8]' (FDSE) to 'vga/dir_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[9]' (FDSE) to 'vga/dir_x_reg[10]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[10]' (FDSE) to 'vga/dir_x_reg[11]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[11]' (FDSE) to 'vga/dir_x_reg[12]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[12]' (FDSE) to 'vga/dir_x_reg[13]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[13]' (FDSE) to 'vga/dir_x_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[14]' (FDSE) to 'vga/dir_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[15]' (FDSE) to 'vga/dir_x_reg[16]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[16]' (FDSE) to 'vga/dir_x_reg[17]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[17]' (FDSE) to 'vga/dir_x_reg[18]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[18]' (FDSE) to 'vga/dir_x_reg[19]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[19]' (FDSE) to 'vga/dir_x_reg[20]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[20]' (FDSE) to 'vga/dir_x_reg[21]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[21]' (FDSE) to 'vga/dir_x_reg[22]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[22]' (FDSE) to 'vga/dir_x_reg[23]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[23]' (FDSE) to 'vga/dir_x_reg[24]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[24]' (FDSE) to 'vga/dir_x_reg[25]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[25]' (FDSE) to 'vga/dir_x_reg[26]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[26]' (FDSE) to 'vga/dir_x_reg[27]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[27]' (FDSE) to 'vga/dir_x_reg[28]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[28]' (FDSE) to 'vga/dir_x_reg[29]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[29]' (FDSE) to 'vga/dir_x_reg[30]'
+INFO: [Synth 8-3886] merging instance 'vga/dir_x_reg[30]' (FDSE) to 'vga/dir_x_reg[31]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\joystick/PmodJSTK_Int/SPI_Ctrl/sndData_reg[6] )
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[31]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[30]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[29]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[28]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[27]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[26]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[25]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[24]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[23]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[22]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[21]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[20]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[19]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[18]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[17]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[16]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[15]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[14]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[13]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[12]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[11]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[10]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[9]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[8]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[7]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[6]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[5]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[4]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[3]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[2]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[1]) is unused and will be removed from module datapath.
-WARNING: [Synth 8-3332] Sequential element (pcreg/q_reg[0]) is unused and will be removed from module datapath.
+INFO: [Synth 8-3886] merging instance 'vga/red_reg_reg[0]' (FDR) to 'vga/red_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga/red_reg_reg[1]' (FDR) to 'vga/red_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga/red_reg_reg[2]' (FDR) to 'vga/red_reg_reg[3]'
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[31]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[30]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[29]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[28]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[27]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[26]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[25]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[24]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[23]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[22]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[21]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[20]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[19]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[18]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[17]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[16]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[15]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[14]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[13]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[12]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[11]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[10]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[9]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[8]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[7]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[6]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[5]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[4]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[3]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[2]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[1]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (mips1/mips1/dp/pcreg/q_reg[0]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (vga/dir_x_reg[0]) is unused and will be removed from module computer_top.
+WARNING: [Synth 8-3332] Sequential element (vga/dir_y_reg[0]) is unused and will be removed from module computer_top.
 WARNING: [Synth 8-3332] Sequential element (joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[31]) is unused and will be removed from module computer_top.
 WARNING: [Synth 8-3332] Sequential element (joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[30]) is unused and will be removed from module computer_top.
 WARNING: [Synth 8-3332] Sequential element (joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[29]) is unused and will be removed from module computer_top.
@@ -627,59 +743,8 @@ WARNING: [Synth 8-3332] Sequential element (joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_
 WARNING: [Synth 8-3332] Sequential element (joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[4]) is unused and will be removed from module computer_top.
 WARNING: [Synth 8-3332] Sequential element (joystick/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[3]) is unused and will be removed from module computer_top.
 WARNING: [Synth 8-3332] Sequential element (joystick/PmodJSTK_Int/SPI_Ctrl/sndData_reg[6]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][31]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][30]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][29]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][28]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][27]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][26]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][25]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][24]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][23]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][22]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][21]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][20]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][19]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][18]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][17]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][16]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][15]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][14]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][13]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][12]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][11]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][10]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][9]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][8]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][7]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][6]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][5]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][4]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][3]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][2]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][1]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[0][0]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][31]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][30]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][29]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][28]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][27]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][26]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][25]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][24]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][23]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][22]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][21]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][20]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][19]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][18]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][17]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][16]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][15]) is unused and will be removed from module computer_top.
-WARNING: [Synth 8-3332] Sequential element (mips1/dmem1/mem_reg[1][14]) is unused and will be removed from module computer_top.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 761.031 ; gain = 503.848
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 765.324 ; gain = 507.844
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -691,13 +756,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 761.031 ; gain = 503.848
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 765.324 ; gain = 507.844
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 761.031 ; gain = 503.848
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 765.324 ; gain = 507.844
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -709,7 +774,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 772.555 ; gain = 515.371
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 782.594 ; gain = 525.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -733,7 +798,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 772.555 ; gain = 515.371
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 782.594 ; gain = 525.113
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -746,7 +811,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 772.555 ; gain = 515.371
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 782.594 ; gain = 525.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -758,25 +823,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 772.555 ; gain = 515.371
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 782.594 ; gain = 525.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 772.555 ; gain = 515.371
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 782.594 ; gain = 525.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 772.555 ; gain = 515.371
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 782.594 ; gain = 525.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 772.555 ; gain = 515.371
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 782.594 ; gain = 525.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -792,45 +857,52 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |     2|
-|2     |CARRY4 |    10|
-|3     |LUT1   |     3|
-|4     |LUT2   |    76|
-|5     |LUT3   |    39|
-|6     |LUT4   |    24|
-|7     |LUT5   |    36|
-|8     |LUT6   |    34|
-|9     |FDRE   |   210|
-|10    |FDR_1  |     6|
-|11    |FDSE   |     2|
-|12    |FDS_1  |     1|
-|13    |IBUF   |     6|
-|14    |OBUF   |    17|
-|15    |OBUFT  |     5|
+|1     |BUFG   |     4|
+|2     |CARRY4 |   106|
+|3     |LUT1   |    34|
+|4     |LUT2   |   317|
+|5     |LUT3   |    56|
+|6     |LUT4   |    79|
+|7     |LUT5   |    38|
+|8     |LUT6   |    52|
+|9     |FDCE   |    24|
+|10    |FDRE   |   369|
+|11    |FDR_1  |     6|
+|12    |FDSE   |    16|
+|13    |FDS_1  |     1|
+|14    |IBUF   |     6|
+|15    |OBUF   |    31|
+|16    |OBUFT  |     5|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+------------------+----------------+------+
 |      |Instance          |Module          |Cells |
 +------+------------------+----------------+------+
-|1     |top               |                |   471|
-|2     |  joystick        |PmodJSTK_Demo   |   441|
-|3     |    DispCtrl      |ssdCtrl         |   168|
-|4     |      BtoBCD      |Binary_To_BCD   |   122|
+|1     |top               |                |  1144|
+|2     |  joystick        |PmodJSTK_Demo   |   435|
+|3     |    DispCtrl      |ssdCtrl         |   162|
+|4     |      BtoBCD      |Binary_To_BCD   |   116|
 |5     |    PmodJSTK_Int  |PmodJSTK        |   210|
 |6     |      SPI_Ctrl    |spiCtrl         |   137|
 |7     |      SPI_Int     |spiMode0        |    46|
 |8     |      SerialClock |ClkDiv_66_67kHz |    27|
 |9     |    genSndRec     |ClkDiv_5Hz      |    63|
+|10    |  vga             |bouncing_box    |   663|
+|11    |    sync_d        |Synchronizer    |     3|
+|12    |    sync_l        |Synchronizer_0  |     3|
+|13    |    sync_r        |Synchronizer_1  |     2|
+|14    |    sync_u        |Synchronizer_2  |     2|
+|15    |    vga_sync_unit |vga_sync        |   104|
 +------+------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 772.555 ; gain = 515.371
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 782.594 ; gain = 525.113
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2113 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 772.555 ; gain = 166.859
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 772.555 ; gain = 515.371
+Synthesis finished with 0 errors, 0 critical warnings and 66 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 782.594 ; gain = 173.176
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 782.594 ; gain = 525.113
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 119 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -840,11 +912,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDS_1 => FDSE (inverted pins: C): 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-123 Infos, 210 Warnings, 0 Critical Warnings and 0 Errors encountered.
+203 Infos, 164 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 775.242 ; gain = 530.883
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 783.000 ; gain = 538.531
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/mgamlem19/Desktop/super-octo-train-michael_test/super-octo-train-michael_test/MP3/FINAL/mips.runs/synth_1/computer_top.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mgamlem19/Desktop/super-octo-train/MP3/FINAL/mips.runs/synth_1/computer_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file computer_top_utilization_synth.rpt -pb computer_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 775.242 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon May 13 13:49:11 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 783.000 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue May 14 11:06:49 2019...

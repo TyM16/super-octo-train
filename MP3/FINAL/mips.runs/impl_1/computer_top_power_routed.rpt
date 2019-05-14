@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date             : Mon May 13 13:50:32 2019
+| Date             : Tue May 14 11:08:20 2019
 | Host             : LAB-SCI-214-04 running 64-bit major release  (build 9200)
 | Command          : report_power -file computer_top_power_routed.rpt -pb computer_top_power_summary_routed.pb -rpx computer_top_power_routed.rpx
 | Design           : computer_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 26.828 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 31.973 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 26.031                           |
+| Dynamic (W)              | 31.176                           |
 | Device Static (W)        | 0.797                            |
 | Effective TJA (C/W)      | 4.6                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.781 |      455 |       --- |             --- |
-|   LUT as Logic |     0.708 |      184 |     63400 |            0.29 |
-|   Register     |     0.044 |      219 |    126800 |            0.17 |
-|   CARRY4       |     0.023 |       10 |     15850 |            0.06 |
-|   BUFG         |     0.006 |        2 |        32 |            6.25 |
-|   Others       |     0.000 |       12 |       --- |             --- |
-| Signals        |     0.727 |      316 |       --- |             --- |
-| I/O            |    24.523 |       28 |       210 |           13.33 |
+| Slice Logic    |     3.413 |     1140 |       --- |             --- |
+|   LUT as Logic |     2.859 |      457 |     63400 |            0.72 |
+|   CARRY4       |     0.326 |      106 |     15850 |            0.67 |
+|   Register     |     0.213 |      430 |    126800 |            0.34 |
+|   BUFG         |     0.015 |        4 |        32 |           12.50 |
+|   Others       |     0.000 |       24 |       --- |             --- |
+| Signals        |     3.130 |      730 |       --- |             --- |
+| I/O            |    24.633 |       42 |       210 |           20.00 |
 | Static Power   |     0.797 |          |           |                 |
-| Total          |    26.828 |          |           |                 |
+| Total          |    31.973 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     2.091 |       1.528 |      0.563 |
-| Vccaux    |       1.800 |     0.991 |       0.898 |      0.093 |
-| Vcco33    |       3.300 |     6.939 |       6.935 |      0.004 |
+| Vccint    |       1.000 |     7.125 |       6.563 |      0.563 |
+| Vccaux    |       1.800 |     0.995 |       0.902 |      0.093 |
+| Vcco33    |       3.300 |     6.971 |       6.967 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -138,15 +138,21 @@ Table of Contents
 +-------------------+-----------+
 | Name              | Power (W) |
 +-------------------+-----------+
-| computer_top      |    26.031 |
-|   joystick        |     1.471 |
-|     DispCtrl      |     0.782 |
-|       BtoBCD      |     0.396 |
-|     PmodJSTK_Int  |     0.328 |
-|       SPI_Ctrl    |     0.031 |
-|       SPI_Int     |     0.142 |
-|       SerialClock |     0.155 |
-|     genSndRec     |     0.360 |
+| computer_top      |    31.176 |
+|   joystick        |     1.591 |
+|     DispCtrl      |     0.924 |
+|       BtoBCD      |     0.489 |
+|     PmodJSTK_Int  |     0.307 |
+|       SPI_Ctrl    |     0.025 |
+|       SPI_Int     |     0.144 |
+|       SerialClock |     0.138 |
+|     genSndRec     |     0.361 |
+|   vga             |     4.902 |
+|     sync_d        |     0.016 |
+|     sync_l        |     0.014 |
+|     sync_r        |     0.003 |
+|     sync_u        |     0.005 |
+|     vga_sync_unit |     0.518 |
 +-------------------+-----------+
 
 
